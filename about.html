@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:box-border">
+      <!-- header -->
+      <header>
+        <div
+          class="mobile:hidden desktop:w-full desktop:h-[92px] desktop:bg-tint-blue desktop:flex desktop:justify-between desktop:items-center desktop:px-[160px] desktop:dark:bg-gray-blue"
+        >
+          <div class="desktop:w-[122px] desktop:h-[24.71px]">
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+          <nav>
+            <div class="mobile:hidden desktop:flex desktop:gap-x-[48px]">
+              <div
+                class="desktop:w-[448px] desktop:flex desktop:gap-x-[32px] desktop:text-[#BBBBCB] desktop:text-[16px] desktop:leading-7 desktop:items-center desktop:font-medium"
+              >
+                <a
+                  href="index.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="desktop:min-w-fit desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >About Us</a
+                >
+                <a
+                  href="features.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="contact.html"
+                class="desktop:w-[185px] desktop:h-[60px] desktop:border-2 desktop:rounded-[41px] desktop:border-[#F4F6FC33] desktop:text-white desktop:font-medium desktop:text-center desktop:leading-[60px] desktop:hover:text-dark-blue desktop:hover:font-semibold desktop:hover:bg-grey desktop:transition-colors desktop:duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[70px] mobile:bg-tint-blue mobile:flex mobile:items-center mobile:justify-between mobile:px-[30px] mobile:relative mobile:dark:bg-gray-blue desktop:hidden"
+        >
+          <div>
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+
+          <div>
+            <!-- hamburger -->
+            <label
+              for="show"
+              class="mobile:w-[40px] mobile:h-[40px] mobile:rounded-[7px] mobile:cursor-pointer"
+            >
+              <div class="mobile:pt-[7px]">
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+              </div>
+            </label>
+            <input
+              type="radio"
+              id="show"
+              name="menu"
+              class="mobile:hidden peer"
+            />
+            <!-- hamburger -->
+
+            <div
+              class="mobile:w-full mobile:h-dvh mobile:flex mobile:justify-between mobile:bg-tint-blue mobile:absolute mobile:top-0 mobile:-left-[100%] mobile:px-[30px] mobile:py-[10px] mobile:peer-checked:left-0 mobile:transition-all mobile:duration-500 mobile:dark:bg-gray-blue"
+            >
+              <div
+                class="mobile:w-[200px] mobile:flex mobile:flex-wrap mobile:flex-col"
+              >
+                <div class="mobile:py-[10px]">
+                  <a href="index.html" class="mobile:text-grey">Home</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="about.html" class="mobile:text-grey">About us</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="features.html" class="mobile:text-grey">Features</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="pricing.html" class="mobile:text-grey">Pricing</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="#faq" class="mobile:text-grey">FAQ</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="blog.html" class="mobile:text-grey">Blog</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="contact.html" class="mobile:text-grey">Contact Us</a>
+                </div>
+              </div>
+
+              <label
+                for="close"
+                class="mobile:w-[30px] mobile:h-[30px] mobile:text-[25px] mobile:text-white mobile:pl-[5px] mobile:cursor-pointer"
+                >&times;</label
+              >
+              <input
+                type="radio"
+                name="menu"
+                id="close"
+                class="mobile:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+      </header>
+      <!-- header -->
+
+      <!-- hero -->
+      <div
+        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:dark:bg-dark-gray desktop:h-[592px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[336px] desktop:mx-auto desktop:flex desktop:justify-between desktop:max-w-none"
+        >
+          <div
+            class="mobile:mb-[20px] desktop:w-[595px] desktop:h-[303px] desktop:mb-0"
+          >
+            <p
+              class="mobile:text-center mobile:font-normal desktop:text-left desktop:text-[18px] desktop:leading-[32px]"
+            >
+              About us
+            </p>
+            <h1
+              class="mobile:text-dark-blue mobile:text-center mobile:mb-[10px] mobile:dark:text-white desktop:text-left desktop:mt-[8px] desktop:mb-[32px]"
+            >
+              Our designs solve problems
+            </h1>
+            <p
+              class="mobile:description mobile:text-center desktop:text-left desktop:w-[484px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <img
+            class="mobile:object-cover desktop:w-[547px] desktop:h-[336px]"
+            src="./public/images/about/picture-1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- hero -->
+
+      <!-- who we are -->
+      <div
+        class="mobile:w-full mobile:dark:bg-dark-gray desktop:h-[716px]"
+      >
+        <div class="desktop:w-[1280px] desktop:h-[716px] desktop:mx-auto">
+          <div
+            class="mobile:max-w-[580px] mobile:mx-auto mobile:px-[30px] mobile:py-[60px] mobile:bg-grey mobile:dark:bg-chetwode desktop:w-[1280px] desktop:h-[376px] desktop:py-[80px] desktop:pl-[79px] desktop:pr-0 desktop:max-w-none desktop:mx-0"
+          >
+            <div class="desktop:w-[1092px] desktop:h-[216px]">
+              <p
+                class="mobile:description mobile:text-dark-blue mobile:font-medium mobile:mb-[4px]"
+              >
+                Who we are
+              </p>
+              <div class="desktop:flex desktop:justify-between">
+                <div>
+                  <h3>Goal focussed</h3>
+                  <p
+                    class="mobile:description mobile:mt-[8px] mobile:mb-[15px] desktop:w-[515px] desktop:mt-[16px] desktop:mb-0"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div>
+                  <h3>Continuous improvement</h3>
+                  <p
+                    class="mobile:description mobile:mt-[8px] desktop:w-[515px] desktop:mt-[16px]"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="mobile:mx-auto mobile:w-[580px] mobile:object-cover desktop:mx-0 desktop:w-[1280px] desktop:h-[340px]"
+            src="./public/images/about/picture-2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- who we are -->
+
+      <!-- process -->
+      <div
+        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:bg-white mobile:dark:bg-dark-gray desktop:h-[524px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[268px] desktop:max-w-none"
+        >
+          <h2 class="mobile:text-center desktop:mb-[48px]">
+            The process we follow
+          </h2>
+          <!-- cards -->
+          <div
+            class="mobile:w-[450px] mobile:mx-auto desktop:w-[1280px] desktop:h-[156px] desktop:flex desktop:justify-between"
+          >
+            <div
+              class="mobile:mt-[40px] desktop:mt-0 desktop:w-[296px] desktop:h-[156px]"
+            >
+              <div
+                class="mobile:flex mobile:gap-x-[10px] mobile:items-center mobile:mb-[10px] desktop:gap-x-[11px] desktop:mb-[32px]"
+              >
+                <div
+                  class="mobile:w-[20px] mobile:h-[20px] mobile:bg-royal-blue mobile:rounded-full desktop:w-[24px] desktop:h-[24px]"
+                ></div>
+                <div
+                  class="mobile:w-[400px] mobile:h-0 mobile:border-2 mobile:border-[#2405F2]/40 mobile:border-dashed desktop:w-[224px]"
+                ></div>
+              </div>
+              <h6>Planning</h6>
+              <p
+                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+
+            <div
+              class="mobile:mt-[20px] desktop:mt-0 desktop:w-[296px] desktop:h-[156px]"
+            >
+              <div
+                class="mobile:flex mobile:gap-x-[10px] mobile:items-center mobile:mb-[10px] desktop:gap-x-[11px] desktop:mb-[32px]"
+              >
+                <div
+                  class="mobile:w-[20px] mobile:h-[20px] mobile:bg-royal-blue mobile:rounded-full desktop:w-[24px] desktop:h-[24px]"
+                ></div>
+                <div
+                  class="mobile:w-[400px] mobile:h-0 mobile:border-2 mobile:border-[#2405F2]/40 mobile:border-dashed desktop:w-[224px]"
+                ></div>
+              </div>
+              <h6>Conception</h6>
+              <p
+                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+
+            <div
+              class="mobile:mt-[20px] desktop:mt-0 desktop:w-[296px] desktop:h-[156px]"
+            >
+              <div
+                class="mobile:flex mobile:gap-x-[10px] mobile:items-center mobile:mb-[10px] desktop:gap-x-[11px] desktop:mb-[32px]"
+              >
+                <div
+                  class="mobile:w-[20px] mobile:h-[20px] mobile:bg-royal-blue mobile:rounded-full desktop:w-[24px] desktop:h-[24px]"
+                ></div>
+                <div
+                  class="mobile:w-[400px] mobile:h-0 mobile:border-2 mobile:border-[#2405F2]/40 mobile:border-dashed desktop:w-[224px]"
+                ></div>
+              </div>
+              <h6>Design</h6>
+              <p
+                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+
+            <div
+              class="mobile:mt-[20px] desktop:mt-0 desktop:w-[296px] desktop:h-[156px]"
+            >
+              <div
+                class="mobile:flex mobile:gap-x-[10px] mobile:items-center mobile:mb-[10px] desktop:gap-x-[11px] desktop:mb-[32px]"
+              >
+                <div
+                  class="mobile:w-[20px] mobile:h-[20px] mobile:bg-royal-blue mobile:rounded-full desktop:w-[24px] desktop:h-[24px]"
+                ></div>
+                <div
+                  class="mobile:w-[400px] mobile:h-0 mobile:border-2 mobile:border-[#2405F2]/40 mobile:border-dashed desktop:w-[224px]"
+                ></div>
+              </div>
+              <h6>Development</h6>
+              <p
+                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+
+            <!-- cards -->
+          </div>
+        </div>
+      </div>
+      <!-- process -->
+
+      <!-- mission -->
+      <div
+        class="mobile:w-full mobile:bg-accent mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-chetwode  desktop:h-[1022px] desktop:py-[128px] desktop:flex desktop:justify-center desktop:flex-wrap desktop:gap-y-[96px] desktop:px-0"
+      >
+        <div
+          class="desktop:w-[1278px] desktop:h-[336px] desktop:flex desktop:justify-between desktop:items-center"
+        >
+          <div
+            class="mobile:mb-[20px] mobile:max-w-[580px] mobile:mx-auto desktop:w-[623px] desktop:h-[228px] desktop:max-w-none desktop:mb-0 desktop:mx-0"
+          >
+            <p
+              class="mobile:description mobile:font-medium mobile:text-dark-blue"
+            >
+              Our Mission
+            </p>
+            <h3 class="mobile:my-[8px] desktop:my-[16px]">
+              Inspire, Innovate, Share
+            </h3>
+            <p class="mobile:description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <img
+            class="mobile:w-[500px] mobile:h-[300px] mobile:mx-auto mobile:object-cover desktop:w-[515px] desktop:h-[336px] desktop:mx-0"
+            src="./public/images/about/picture-3.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[334px] desktop:flex desktop:justify-between desktop:items-center desktop:mx-0 desktop:max-w-none"
+        >
+          <img
+            class="mobile:w-[500px] mobile:h-[300px] mobile:mt-[10px] mobile:mx-auto mobile:object-cover desktop:w-[514px] desktop:h-[334px] desktop:mx-0"
+            src="./public/images/about/picture-4.jpg"
+            alt=""
+          />
+          <div class="mobile:mt-[20px] desktop:w-[623px] desktop:h-[228px]">
+            <p
+              class="mobile:description mobile:font-medium mobile:text-dark-blue"
+            >
+              Our Vision
+            </p>
+            <h3 class="mobile:my-[8px] desktop:my-[16px]">Laser focus</h3>
+            <p class="mobile:description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- mission -->
+
+      <!-- benefits -->
+      <div
+        class="mobile:w-full mobile:px-[30px] mobile:py-[60px] mobile:bg-white mobile:dark:bg-dark-gray desktop:h-[880px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="mobile:max-w-[600px] mobile:mx-auto desktop:w-[1280px] desktop:h-[624px] desktop:mx-auto desktop:flex desktop:justify-center desktop:flex-wrap desktop:content-between desktop:max-w-none"
+        >
+          <h2 class="mobile:mb-[30px] mobile:text-center desktop:w-[630px]">
+            The benefits of working with us
+          </h2>
+          <!-- cards -->
+          <div
+            class="mobile:flex mobile:flex-wrap mobile:justify-around mobile:gap-y-[10px] mobile:content-start desktop:w-[1280px] desktop:h-[316px] desktop:justify-between desktop:gap-y-0 desktop:content-none desktop:flex-nowrap"
+          >
+            <div
+              class="mobile:w-[280px] mobile:h-[240px] mobile:bg-grey mobile:pt-[30px] mobile:pb-[10px] mobile:px-[30px] mobile:dark:bg-chetwode desktop:w-[405px] desktop:h-[316px] desktop:pt-[50px] desktop:pr-[32px] desktop:pl-[48px] desktop:pb-[48px] desktop:px-0"
+            >
+              <img
+                class="mobile:w-[30px] mobile:h-[30px] desktop:w-[32px] desktop:h-[32px]"
+                src="./public/svg/feature/hand.svg"
+                alt=""
+              />
+              <h6
+                class="mobile:mt-[20px] mobile:mb-[8px] desktop:mt-[26px] desktop:mb-[12px]"
+              >
+                Customize with ease
+              </h6>
+              <p class="mobile:description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+
+            <div
+              class="mobile:w-[280px] mobile:h-[240px] mobile:bg-grey mobile:pt-[30px] mobile:pb-[10px] mobile:px-[30px] mobile:dark:bg-chetwode desktop:w-[405px] desktop:h-[316px] desktop:pt-[50px] desktop:pr-[32px] desktop:pl-[48px] desktop:pb-[48px] desktop:px-0"
+            >
+              <img
+                class="mobile:w-[30px] mobile:h-[30px] desktop:w-[32px] desktop:h-[32px]"
+                src="./public/svg/feature/customization.svg"
+                alt=""
+              />
+              <h6
+                class="mobile:mt-[20px] mobile:mb-[8px] desktop:mt-[26px] desktop:mb-[12px]"
+              >
+                Perfectly Responsive
+              </h6>
+              <p class="mobile:description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+
+            <div
+              class="mobile:w-[280px] mobile:h-[240px] mobile:bg-grey mobile:pt-[30px] mobile:pb-[10px] mobile:px-[30px] mobile:dark:bg-chetwode desktop:w-[405px] desktop:h-[316px] desktop:pt-[50px] desktop:pr-[32px] desktop:pl-[48px] desktop:pb-[48px]"
+            >
+              <img
+                class="mobile:w-[30px] mobile:h-[30px] desktop:w-[32px] desktop:h-[32px]"
+                src="./public/svg/feature/client.svg"
+                alt=""
+              />
+              <h6
+                class="mobile:mt-[20px] mobile:mb-[8px] desktop:mt-[26px] desktop:mb-[12px]"
+              >
+                Friendly Support
+              </h6>
+              <p class="mobile:description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+          </div>
+          <!-- cards -->
+
+          <!-- logo -->
+          <div
+            class="mobile:w-full mobile:pt-[40px] mobile:px-[30px] desktop:w-[1280px] desktop:h-[84px] desktop:flex desktop:justify-between desktop:items-center desktop:max-w-none desktop:px-0 desktop:py-0"
+          >
+            <div
+              class="mobile:mb-[20px] desktop:w-[176px] desktop:h-[84px] desktop:mb-0"
+            >
+              <h3 class="mobile:text-center desktop:text-left">100.000+</h3>
+              <p
+                class="mobile:description mobile:text-center desktop:text-left"
+              >
+                Finsweet Users
+              </p>
+            </div>
+
+            <div
+              class="mobile:max-w-[580px] mobile:mx-auto mobile:flex mobile:flex-wrap mobile:justify-center mobile:gap-y-[20px] mobile:content-center mobile:gap-x-[20px] desktop:w-[1015px] desktop:h-[32px] desktop:justify-between desktop:max-w-none desktop:gap-x-0 desktop:gap-y-0 desktop:content-none"
+            >
+              <img
+                class="mobile:w-[125px] desktop:w-[162px] desktop:h-[32px]"
+                src="./public/svg/about/logo1.svg"
+                alt=""
+              />
+              <img
+                class="mobile:w-[125px] desktop:w-[138px] desktop:h-[32px]"
+                src="./public/svg/about/logo2.svg"
+                alt=""
+              />
+              <img
+                class="mobile:w-[125px] desktop:w-[136px] desktop:h-[32px]"
+                src="./public/svg/about/logo3.svg"
+                alt=""
+              />
+              <img
+                class="mobile:w-[125px] desktop:w-[155px] desktop:h-[32px]"
+                src="./public/svg/about/logo4.svg"
+                alt=""
+              />
+              <img
+                class="mobile:w-[125px] desktop:w-[137px] desktop:h-[32px]"
+                src="./public/svg/about/logo5.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- logo -->
+        </div>
+      </div>
+      <!-- benefits -->
+
+      <!-- team -->
+      <div
+        class="mobile:w-full mobile:bg-grey mobile:py-[60px] mobile:px-[20px] mobile:dark:bg-chetwode desktop:h-[712px] desktop:py-[128px] desktop:px-0"
+      >
+        <h2 class="mobile:text-center mobile:mb-[30px] desktop:mb-[48px]">
+          Meet our team
+        </h2>
+
+        <div
+          class="mobile:w-[450px] mobile:flex mobile:flex-wrap mobile:justify-between mobile:gap-y-[10px] mobile:mx-auto desktop:w-[1280px] desktop:h-[344px] desktop:gap-y-0 desktop:flex-nowrap"
+        >
+          <div
+            class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
+          >
+            <div class="mobile:relative">
+              <img
+                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
+                src="./public/images/about/picture-5.jpg"
+                alt=""
+              />
+              <div
+                class="mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-[31px] mobile:flex mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:right-0 desktop:pb-[28px]"
+              >
+                <div
+                  class="mobile:flex mobile:w-[62px] mobile:justify-between desktop:w-[61px] desktop:h-[13px]"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
+              John Smith
+            </h6>
+            <p
+              class="mobile:description mobile:text-center mobile:mx-auto"
+            >
+              CEO
+            </p>
+          </div>
+
+          <div
+            class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
+          >
+            <img
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
+              src="./public/images/about/picture-6.jpg"
+              alt=""
+            />
+            <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
+              Simon Adams
+            </h6>
+            <p
+              class="mobile:description mobile:text-center mobile:mx-auto"
+            >
+              CTO
+            </p>
+          </div>
+
+          <div
+            class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
+          >
+            <img
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
+              src="./public/images/about/picture-7.jpg"
+              alt=""
+            />
+            <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
+              Paul Jones
+            </h6>
+            <p
+              class="mobile:description mobile:text-center mobile:mx-auto"
+            >
+              Design Lead
+            </p>
+          </div>
+
+          <div
+            class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
+          >
+            <img
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
+              src="./public/images/about/picture-8.jpg"
+              alt=""
+            />
+            <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
+              Sara Hardin
+            </h6>
+            <p
+              class="mobile:description mobile:text-center mobile:mx-auto"
+            >
+              Project Manager
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- team -->
+
+      <!-- footer -->
+      <footer>
+        <div
+          class="mobile:hidden desktop:block desktop:w-full desktop:h-[489px]"
+        >
+          <div
+            class="desktop:w-full desktop:h-[397px] desktop:bg-tint-blue desktop:pl-[160px] desktop:pt-[96px] desktop:dark:bg-gray-blue"
+          >
+            <!-- content -->
+            <div
+              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+            >
+              <div>
+                <img
+                  class="desktop:w-[160px] desktop:h-[32px]"
+                  src="./public/svg/logo.svg"
+                  alt=""
+                />
+                <p
+                  class="desktop:font-medium desktop:text-white/80 desktop:w-[399px] desktop:mt-[24px]"
+                >
+                  We are always open to discuss your project and improve your
+                  online presence.
+                </p>
+              </div>
+              <div>
+                <h2 class="desktop:text-white">Lets Talk!</h2>
+                <p
+                  class="desktop:font-normal desktop:text-grey/80 desktop:w-[399px] desktop:mt-[14px] desktop:mb-[28px]"
+                >
+                  We are always open to discuss your project, improve your
+                  online presence and help with your UX/UI design challenges.
+                </p>
+                <div
+                  class="desktop:w-[144px] desktop:h-[16px] desktop:flex desktop:justify-between"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/instagram.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- content -->
+
+            <!-- contact -->
+            <div
+              class="desktop:w-[517px] desktop:h-[95px] desktop:bg-yellow desktop:flex desktop:items-center"
+            >
+              <div
+                class="desktop:w-[343px] desktop:h-[62px] desktop:flex desktop:gap-x-[29px] desktop:pl-[37px]"
+              >
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Email me at
+                  </p>
+                  <p class="desktop:font-normal desktop:text-dark-blue/80">
+                    contact@website.com
+                  </p>
+                </div>
+
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Call us
+                  </p>
+                  <p
+                    class="desktop:font-normal desktop:text-dark-blue/80 desktop:w-[133px] desktop:h-[28px]"
+                  >
+                    0927 6277 28525
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+          </div>
+
+          <!-- copyright -->
+          <div
+            class="desktop:w-full desktop:h-[92px] desktop:bg-white desktop:flex desktop:px-[160px] desktop:justify-between desktop:items-center desktop:dark:bg-dark-gray"
+          >
+            <p
+              class="desktop:text-dark-blue desktop:font-medium desktop:w-[241px] desktop:dark:text-white"
+            >
+              Copyright 2022, Finsweet.com
+            </p>
+            <div
+              class="desktop:w-[437px] desktop:font-medium desktop:text-[16px] desktop:leading-[28px] desktop:text-dark-blue desktop:flex desktop:justify-between desktop:dark:text-white"
+            >
+              <a
+                href="index.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >About us</a
+              >
+              <a
+                href="features.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Features</a
+              >
+              <a
+                href="pricing.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#faq"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >FAQ</a
+              >
+              <a
+                href="blog.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[750px] mobile:bg-tint-blue mobile:dark:bg-gray-blue mobile:px-[30px] mobile:pt-[60px] desktop:hidden"
+        >
+          <!-- content -->
+          <div class="mobile:max-w-[580px] mobile:mx-auto">
+            <div>
+              <img
+                class="mobile:mb-[10px]"
+                src="./public/svg/logo.svg"
+                alt=""
+              />
+              <p
+                class="mobile:font-medium mobile:text-white/80 mobile:mb-[20px]"
+              >
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+
+              <!-- contact -->
+              <div
+                class="mobile:w-[360px] mx-auto mobile:p-[10px] mobile:bg-yellow mobile:flex mobile:items-center mobile:mb-[30px]"
+              >
+                <div class="mobile:flex mobile:gap-x-[15px]">
+                  <div>
+                    <p
+                      class="mobile:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Email me at
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      contact@website.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <p
+                      class="desktop:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Call us
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      0927 6277 28525
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+            </div>
+            <div>
+              <h2 class="mobile:text-white">Lets Talk!</h2>
+              <p
+                class="mobile:font-normal mobile:text-grey/80 mobile:mb-[40px]"
+              >
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div
+                class="mobile:mx-auto mobile:flex mobile:justify-between mobile:h-[30px] mobile:w-[300px] mobile:mb-[35px]"
+              >
+                <img src="./public/svg/facebook.svg" alt="" />
+                <img src="./public/svg/twitter.svg" alt="" />
+                <img src="./public/svg/instagram.svg" alt="" />
+                <img src="./public/svg/linkedin.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div>
+              <div
+                class="mobile:h-[200px] mobile:font-medium mobile:text-[16px] mobile:text-grey/80 mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[10px] mobile:items-center"
+              >
+                <a
+                  href="index.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >About us</a
+                >
+                <a
+                  href="features.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Blog</a
+                >
+              </div>
+              <p
+                class="mobile:text-white mobile:font-medium mobile:text-center mobile:text-[13px] mobile:mt-[35px]"
+              >
+                Copyright 2022, Finsweet.com
+              </p>
+            </div>
+            <!-- copyright -->
+          </div>
+          <!-- content -->
+        </div>
+        <!-- mobile -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- wrapper -->
+  </body>
+</html>

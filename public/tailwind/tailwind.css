@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ItalicPoppins;
+  src: url("../font/Poppins-Italic.ttf");
+}
+
+@layer base {
+  * {
+    @apply font-[poppins];
+    @apply scroll-smooth;
+  }
+  h4 {
+    @apply mobile:dark:text-white mobile:text-dark-blue;
+  }
+  h1 {
+    @apply mobile:font-semibold mobile:text-[44px] mobile:text-white desktop:text-[54px] desktop:leading-[74px];
+  }
+  h2 {
+    @apply mobile:font-semibold mobile:text-[35px] mobile:text-dark-blue mobile:dark:text-white desktop:text-[48px] desktop:leading-[64px];
+  }
+  h3 {
+    @apply mobile:text-[28px] mobile:font-semibold mobile:text-dark-blue mobile:dark:text-white desktop:text-[38px] desktop:leading-[56px];
+  }
+  h5 {
+    @apply mobile:text-dark-blue mobile:font-medium mobile:text-[25px] mobile:dark:text-white desktop:text-[32px] desktop:leading-[48px];
+  }
+  h6 {
+    @apply mobile:text-[18px] mobile:text-dark-blue mobile:font-medium mobile:dark:text-white desktop:text-[24px] desktop:leading-[36px];
+  }
+  p {
+    @apply mobile:text-[16px] mobile:text-dark-blue mobile:dark:text-white desktop:leading-[28px];
+  }
+}
+
+@layer components {
+  .view {
+    @apply mobile:flex mobile:items-center mobile:gap-x-[8px] mobile:font-medium mobile:text-[14px] desktop:leading-[28px] desktop:text-[16px] desktop:gap-x-[16px];
+  }
+  .arrow {
+    @apply w-[24px];
+  }
+  .description {
+    @apply mobile:text-[14px] mobile:font-normal mobile:text-dark-blue/70 mobile:dark:text-white/70 desktop:text-[16px] desktop:leading-[28px];
+  }
+  .question {
+    @apply w-[816px] h-[36px];
+  }
+  .input {
+    @apply mobile:w-[350px] mobile:h-[50px] desktop:w-[432px] desktop:h-[64px] outline-none p-[10px] pl-[32px] rounded-lg bg-tint-blue caret-grey text-grey border-white/5 border-[1.5px];
+  }
+  .form {
+    @apply mobile:w-[400px] mobile:h-[50px] mobile:mb-[25px] desktop:w-[438px] desktop:h-[64px] bg-grey rounded-[8px] outline-none border-[#0000001F] border-[1px] py-[18px] px-[32px] placeholder:text-black desktop:mb-0;
+  }
+}

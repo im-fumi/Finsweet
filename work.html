@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:box-border">
+      <!-- header -->
+      <header>
+        <div
+          class="mobile:hidden desktop:w-full desktop:h-[92px] desktop:bg-tint-blue desktop:flex desktop:justify-between desktop:items-center desktop:px-[160px] desktop:dark:bg-gray-blue"
+        >
+          <div class="desktop:w-[122px] desktop:h-[24.71px]">
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+          <nav>
+            <div class="mobile:hidden desktop:flex desktop:gap-x-[48px]">
+              <div
+                class="desktop:w-[448px] desktop:flex desktop:gap-x-[32px] desktop:text-[#BBBBCB] desktop:text-[16px] desktop:leading-7 desktop:items-center desktop:font-medium"
+              >
+                <a
+                  href="index.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="desktop:min-w-fit desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >About Us</a
+                >
+                <a
+                  href="features.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="contact.html"
+                class="desktop:w-[185px] desktop:h-[60px] desktop:border-2 desktop:rounded-[41px] desktop:border-[#F4F6FC33] desktop:text-white desktop:font-medium desktop:text-center desktop:leading-[60px] desktop:hover:text-dark-blue desktop:hover:font-semibold desktop:hover:bg-grey desktop:transition-colors desktop:duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[70px] mobile:bg-tint-blue mobile:flex mobile:items-center mobile:justify-between mobile:px-[30px] mobile:relative mobile:dark:bg-gray-blue desktop:hidden"
+        >
+          <div>
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+
+          <div>
+            <!-- hamburger -->
+            <label
+              for="show"
+              class="mobile:w-[40px] mobile:h-[40px] mobile:rounded-[7px] mobile:cursor-pointer"
+            >
+              <div class="mobile:pt-[7px]">
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+              </div>
+            </label>
+            <input
+              type="radio"
+              id="show"
+              name="menu"
+              class="mobile:hidden peer"
+            />
+            <!-- hamburger -->
+
+            <div
+              class="mobile:w-full mobile:h-dvh mobile:flex mobile:justify-between mobile:bg-tint-blue mobile:absolute mobile:top-0 mobile:-left-[100%] mobile:px-[30px] mobile:py-[10px] mobile:peer-checked:left-0 mobile:transition-all mobile:duration-500 mobile:dark:bg-gray-blue"
+            >
+              <div
+                class="mobile:w-[200px] mobile:flex mobile:flex-wrap mobile:flex-col"
+              >
+                <div class="mobile:py-[10px]">
+                  <a href="index.html" class="mobile:text-grey">Home</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="about.html" class="mobile:text-grey">About us</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="features.html" class="mobile:text-grey">Features</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="pricing.html" class="mobile:text-grey">Pricing</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="#faq" class="mobile:text-grey">FAQ</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="blog.html" class="mobile:text-grey">Blog</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="contact.html" class="mobile:text-grey">Contact Us</a>
+                </div>
+              </div>
+
+              <label
+                for="close"
+                class="mobile:w-[30px] mobile:h-[30px] mobile:text-[25px] mobile:text-white mobile:pl-[5px] mobile:cursor-pointer"
+                >&times;</label
+              >
+              <input
+                type="radio"
+                name="menu"
+                id="close"
+                class="mobile:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+      </header>
+      <!-- header -->
+
+      <!-- hero -->
+      <div
+        class="mobile:w-full mobile:bg-grey mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-chetwode desktop:h-[416px] desktop:flex desktop:justify-center desktop:items-center desktop:px-0 desktop:py-0"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:text-center mobile:mx-auto desktop:mx-0 desktop:w-[733px] desktop:h-[224px] desktop:max-w-none"
+        >
+          <p class="mobile:description mobile:font-medium">What we created</p>
+          <h2
+            class="mobile:mt-[2px] mobile:mb-[10px] desktop:mb-[24px] desktop:mt-[4px]"
+          >
+            Our Work Portfolio
+          </h2>
+          <p
+            class="mobile:description mobile:font-medium mobile:mb-[15px] desktop:mb-[32px]"
+          >
+            We help teams create great digital products by providing them with
+            tools and technology to make the design-to-code process universally
+            accessible.
+          </p>
+
+          <div
+            class="mobile:w-[120px] mobile:flex mobile:justify-between mobile:mx-auto desktop:w-[147px] desktop:h-[16px]"
+          >
+            <img src="./public/svg/bfacebook.svg" alt="" />
+            <img src="./public/svg/btwitter.svg" alt="" />
+            <img src="./public/svg/binstagram.svg" alt="" />
+            <img src="./public/svg/blinkedin.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- hero -->
+
+      <!-- work -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:px-[30px] mobile:pt-[50px] mobile:dark:bg-dark-gray desktop:h-[2038px] desktop:pt-[96px] desktop:px-0"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[1942px] desktop:max-w-none"
+        >
+          <div
+            class="mobile:flex mobile:justify-between mobile:mx-auto mobile:mb-[30px] desktop:w-[473px] desktop:h-[32px] desktop:mb-[48px]"
+          >
+            <p class="mobile:description mobile:text-royal-blue">All</p>
+            <p
+              class="mobile:description mobile:hover:text-black mobile:transition-all mobile:duration-200 mobile:cursor-pointer"
+            >
+              UI Design
+            </p>
+            <p
+              class="mobile:description mobile:hover:text-black mobile:transition-all mobile:duration-200 mobile:cursor-pointer"
+            >
+              Webflow Design
+            </p>
+            <p
+              class="mobile:description mobile:hover:text-black mobile:transition-all mobile:duration-200 mobile:cursor-pointer"
+            >
+              Figma Design
+            </p>
+          </div>
+          <div
+            class="desktop:w-[1280px] desktop:flex desktop:justify-between desktop:flex-wrap desktop:gap-y-[64px]"
+          >
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:mb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:mb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#F4EDE1]/100 to-[#98B1C6]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 1</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="studies.html"
+                >View Portfolio
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:mb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:mb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#FFD3AF]/100 to-[#4F56FF]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 2</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="#"
+                >View Portfolio
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:mb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:mb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#EEBCA7]/100 to-[#C8C8C8]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 3</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="#"
+                >Read case study
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:mb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:mb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#C2E7F2]/100 to-[#98A4FF]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 4</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="#"
+                >Read case study
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:mb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:mb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#C5BCFF]/100 to-[#9BF6D5]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 5</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="#"
+                >Read case study
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+
+            <!-- template -->
+            <div
+              class="mobile:max-w-[580px] mobile:h-[500px] mobile:pb-[30px] mobile:flex mobile:content-between mobile:flex-wrap desktop:w-[623px] desktop:h-[576px] desktop:max-w-none desktop:pb-0"
+            >
+              <div
+                class="mobile:w-[580px] mobile:h-[350px] mobile:flex mobile:justify-center mobile:items-center mobile:bg-gradient-to-br from-[#D2D6FD]/100 to-[#D6ACEA]/100 desktop:w-[623px] desktop:h-[380px]"
+              >
+                <img
+                  class="mobile:w-[500px] mobile:h-[280px] mobile:object-cover desktop:w-[545px] desktop:h-[317px] desktop:object-top"
+                  src="./public/images/work/picture-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="desktop:w-[623px] desktop:h-[124px]">
+                <h3 class="mobile:mb-[5px] desktop:mb-[12px]">Template 6</h3>
+                <p class="mobile:description">
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was a dead black, and the stars had ceased to
+                  twinkle.
+                </p>
+              </div>
+              <a
+                class="mobile:view mobile:text-dark-blue desktop:leading-[24px]"
+                href="#"
+                >Read case study
+                <img src="./public/svg/bluearrow.svg" alt="" />
+              </a>
+            </div>
+            <!-- template -->
+          </div>
+        </div>
+      </div>
+      <!-- work -->
+
+      <!-- contact -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-dark-gray desktop:px-0 desktop:h-[564px] desktop:py-[128px]"
+      >
+        <div
+          class="desktop:w-[730px] desktop:h-[308px] desktop:mx-auto desktop:flex desktop:flex-wrap desktop:justify-center desktop:content-between"
+        >
+          <div>
+            <h2 class="mobile:text-center mobile:mb-[15px] desktop:mb-[20px]">
+              Let's build something great together
+            </h2>
+            <p
+              class="mobile:description mobile:text-center mobile:mb-[22px] desktop:mb-0"
+            >
+              Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
+              ultricies nec dolor sit amet, scelerisque cursus purus.
+            </p>
+          </div>
+
+          <a
+            href="contact.html"
+            class="mobile:block mobile:w-[200px] mobile:h-[55px] mobile:leading-[55px] mobile:mx-auto mobile:bg-yellow mobile:rounded-[41px] mobile:text-dark-blue mobile:font-semibold mobile:text-center desktop:w-[230px] desktop:h-[64px] desktop:text-[18px] desktop:leading-[64px] desktop:mx-0"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <!-- contact -->
+
+      <!-- footer -->
+      <footer>
+        <div
+          class="mobile:hidden desktop:block desktop:w-full desktop:h-[489px]"
+        >
+          <div
+            class="desktop:w-full desktop:h-[397px] desktop:bg-tint-blue desktop:pl-[160px] desktop:pt-[96px] desktop:dark:bg-gray-blue"
+          >
+            <!-- content -->
+            <div
+              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+            >
+              <div>
+                <img
+                  class="desktop:w-[160px] desktop:h-[32px]"
+                  src="./public/svg/logo.svg"
+                  alt=""
+                />
+                <p
+                  class="desktop:font-medium desktop:text-white/80 desktop:w-[399px] desktop:mt-[24px]"
+                >
+                  We are always open to discuss your project and improve your
+                  online presence.
+                </p>
+              </div>
+              <div>
+                <h2 class="desktop:text-white">Lets Talk!</h2>
+                <p
+                  class="desktop:font-normal desktop:text-grey/80 desktop:w-[399px] desktop:mt-[14px] desktop:mb-[28px]"
+                >
+                  We are always open to discuss your project, improve your
+                  online presence and help with your UX/UI design challenges.
+                </p>
+                <div
+                  class="desktop:w-[144px] desktop:h-[16px] desktop:flex desktop:justify-between"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/instagram.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- content -->
+
+            <!-- contact -->
+            <div
+              class="desktop:w-[517px] desktop:h-[95px] desktop:bg-yellow desktop:flex desktop:items-center"
+            >
+              <div
+                class="desktop:w-[343px] desktop:h-[62px] desktop:flex desktop:gap-x-[29px] desktop:pl-[37px]"
+              >
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Email me at
+                  </p>
+                  <p class="desktop:font-normal desktop:text-dark-blue/80">
+                    contact@website.com
+                  </p>
+                </div>
+
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Call us
+                  </p>
+                  <p
+                    class="desktop:font-normal desktop:text-dark-blue/80 desktop:w-[133px] desktop:h-[28px]"
+                  >
+                    0927 6277 28525
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+          </div>
+
+          <!-- copyright -->
+          <div
+            class="desktop:w-full desktop:h-[92px] desktop:bg-white desktop:flex desktop:px-[160px] desktop:justify-between desktop:items-center desktop:dark:bg-dark-gray"
+          >
+            <p
+              class="desktop:text-dark-blue desktop:font-medium desktop:w-[241px] desktop:dark:text-white"
+            >
+              Copyright 2022, Finsweet.com
+            </p>
+            <div
+              class="desktop:w-[437px] desktop:font-medium desktop:text-[16px] desktop:leading-[28px] desktop:text-dark-blue desktop:flex desktop:justify-between desktop:dark:text-white"
+            >
+              <a
+                href="index.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >About us</a
+              >
+              <a
+                href="features.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Features</a
+              >
+              <a
+                href="pricing.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#faq"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >FAQ</a
+              >
+              <a
+                href="blog.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[750px] mobile:bg-tint-blue mobile:dark:bg-gray-blue mobile:px-[30px] mobile:pt-[60px] desktop:hidden"
+        >
+          <!-- content -->
+          <div class="mobile:max-w-[580px] mobile:mx-auto">
+            <div>
+              <img
+                class="mobile:mb-[10px]"
+                src="./public/svg/logo.svg"
+                alt=""
+              />
+              <p
+                class="mobile:font-medium mobile:text-white/80 mobile:mb-[20px]"
+              >
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+
+              <!-- contact -->
+              <div
+                class="mobile:w-[360px] mx-auto mobile:p-[10px] mobile:bg-yellow mobile:flex mobile:items-center mobile:mb-[30px]"
+              >
+                <div class="mobile:flex mobile:gap-x-[15px]">
+                  <div>
+                    <p
+                      class="mobile:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Email me at
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      contact@website.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <p
+                      class="desktop:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Call us
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      0927 6277 28525
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+            </div>
+            <div>
+              <h2 class="mobile:text-white">Lets Talk!</h2>
+              <p
+                class="mobile:font-normal mobile:text-grey/80 mobile:mb-[40px]"
+              >
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div
+                class="mobile:mx-auto mobile:flex mobile:justify-between mobile:h-[30px] mobile:w-[300px] mobile:mb-[35px]"
+              >
+                <img src="./public/svg/facebook.svg" alt="" />
+                <img src="./public/svg/twitter.svg" alt="" />
+                <img src="./public/svg/instagram.svg" alt="" />
+                <img src="./public/svg/linkedin.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div>
+              <div
+                class="mobile:h-[200px] mobile:font-medium mobile:text-[16px] mobile:text-grey/80 mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[10px] mobile:items-center"
+              >
+                <a
+                  href="index.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >About us</a
+                >
+                <a
+                  href="features.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Blog</a
+                >
+              </div>
+              <p
+                class="mobile:text-white mobile:font-medium mobile:text-center mobile:text-[13px] mobile:mt-[35px]"
+              >
+                Copyright 2022, Finsweet.com
+              </p>
+            </div>
+            <!-- copyright -->
+          </div>
+          <!-- content -->
+        </div>
+        <!-- mobile -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- wrapper -->
+  </body>
+</html>

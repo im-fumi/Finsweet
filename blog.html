@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:border-box">
+      <!-- header -->
+      <header>
+        <div
+          class="mobile:hidden desktop:w-full desktop:h-[92px] desktop:bg-tint-blue desktop:flex desktop:justify-between desktop:items-center desktop:px-[160px] desktop:dark:bg-gray-blue"
+        >
+          <div class="desktop:w-[122px] desktop:h-[24.71px]">
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+          <nav>
+            <div class="mobile:hidden desktop:flex desktop:gap-x-[48px]">
+              <div
+                class="desktop:w-[448px] desktop:flex desktop:gap-x-[32px] desktop:text-[#BBBBCB] desktop:text-[16px] desktop:leading-7 desktop:items-center desktop:font-medium"
+              >
+                <a
+                  href="index.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="desktop:min-w-fit desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >About Us</a
+                >
+                <a
+                  href="features.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="contact.html"
+                class="desktop:w-[185px] desktop:h-[60px] desktop:border-2 desktop:rounded-[41px] desktop:border-[#F4F6FC33] desktop:text-white desktop:font-medium desktop:text-center desktop:leading-[60px] desktop:hover:text-dark-blue desktop:hover:font-semibold desktop:hover:bg-grey desktop:transition-colors desktop:duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[70px] mobile:bg-tint-blue mobile:flex mobile:items-center mobile:justify-between mobile:px-[30px] mobile:relative mobile:dark:bg-gray-blue desktop:hidden"
+        >
+          <div>
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+
+          <div>
+            <!-- hamburger -->
+            <label
+              for="show"
+              class="mobile:w-[40px] mobile:h-[40px] mobile:rounded-[7px] mobile:cursor-pointer"
+            >
+              <div class="mobile:pt-[7px]">
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+              </div>
+            </label>
+            <input
+              type="radio"
+              id="show"
+              name="menu"
+              class="mobile:hidden peer"
+            />
+            <!-- hamburger -->
+
+            <div
+              class="mobile:w-full mobile:h-dvh mobile:flex mobile:justify-between mobile:bg-tint-blue mobile:absolute mobile:top-0 mobile:-left-[100%] mobile:px-[30px] mobile:py-[10px] mobile:peer-checked:left-0 mobile:transition-all mobile:duration-500 mobile:dark:bg-gray-blue"
+            >
+              <div
+                class="mobile:w-[200px] mobile:flex mobile:flex-wrap mobile:flex-col"
+              >
+                <div class="mobile:py-[10px]">
+                  <a href="index.html" class="mobile:text-grey">Home</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="about.html" class="mobile:text-grey">About us</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="features.html" class="mobile:text-grey">Features</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="pricing.html" class="mobile:text-grey">Pricing</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="#faq" class="mobile:text-grey">FAQ</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="blog.html" class="mobile:text-grey">Blog</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="contact.html" class="mobile:text-grey">Contact Us</a>
+                </div>
+              </div>
+
+              <label
+                for="close"
+                class="mobile:w-[30px] mobile:h-[30px] mobile:text-[25px] mobile:text-white mobile:pl-[5px] mobile:cursor-pointer"
+                >&times;</label
+              >
+              <input
+                type="radio"
+                name="menu"
+                id="close"
+                class="mobile:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+      </header>
+      <!-- header -->
+
+      <!-- study -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-dark-gray desktop:h-[1113px] desktop:py-[128px]"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[857px] desktop:mx-auto desktop:flex desktop:flex-wrap desktop:justify-center desktop:max-w-none"
+        >
+          <div class="desktop:h-[172px]">
+            <h2
+              class="mobile:text-center mobile:mb-[8px] desktop:w-[949px] desktop:h-[128px] desktop:mb-[16px]"
+            >
+              A UX Case Study on Creating a Studious Environment for Students
+            </h2>
+            <div
+              class="mobile:flex mobile:gap-x-[6px] mobile:mb-[15px] mobile:justify-center desktop:h-[28px] desktop:mb-0"
+            >
+              <p
+                class="mobile:description mobile:font-medium mobile:text-dark-blue/75 mobile:dark:text-white/75"
+              >
+                Andrew Jonson
+              </p>
+              <p
+                class="mobile:description mobile:font-medium mobile:text-dark-blue mobile:dark:text-white"
+              >
+                Posted on 27th January 2021
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="desktop:w-[1280px] desktop:h-[477px] desktop:object-cover"
+            src="./public/images/blog-page/picture-1.jpg"
+            alt=""
+          />
+
+          <div class="desktop:h-[128px] desktop:self-end">
+            <p
+              class="mobile:description mobile:my-[15px] desktop:w-[831px] desktop:text-center desktop:mb-[16px] desktop:mt-0"
+            >
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black, and the stars had ceased to twinkle. By
+              the same illusion which lifts the horizon of the sea to the level
+              of the spectator on a hillside.
+            </p>
+
+            <a
+              class="mobile:description mobile:font-semibold mobile:text-royal-blue/70 desktop:font-medium desktop:text-center desktop:block"
+              href="read.html"
+              >Read more</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- study -->
+
+      <!-- blog -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:px-[30px] mobile:pt-[30px] mobile:pb-[60px] mobile:dark:bg-dark-gray desktop:mt-0 desktop:h-[1490px] desktop:pb-[128px]"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1278px] desktop:h-[1362px] desktop:max-w-none"
+        >
+          <h2 class="mobile:text-center mobile:mb-[30px] desktop:mb-[48px]">
+            Our Blog
+          </h2>
+          <!-- content -->
+          <div
+            class="desktop:flex desktop:flex-wrap desktop:justify-between desktop:gap-y-[64px]"
+          >
+            <div
+              class="mobile:mb-[40px] desktop:w-[405px] desktop:h-[593px] desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-2.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:mb-[40px] desktop:w-[405px] desktop:h-[593px] desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-3.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:mb-[40px] desktop:w-[405px] desktop:h-[593px] desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-4.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:mb-[40px] desktop:w-[405px] desktop:h-[593px] desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-5.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:mb-[40px] desktop:w-[405px] desktop:h-[593px] desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-6.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="desktop:w-[405px] desktop:h-[593px]">
+              <img
+                class="mobile:mb-[22px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[32px]"
+                src="./public/images/blog-page/picture-7.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">27 Jan 2021</p>
+              <h6 class="mobile:my-[5px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a class="mobile:view mobile:mt-[15px] desktop:mt-[24px]" href="">
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+        </div>
+      </div>
+      <!-- blog -->
+
+      <!-- footer -->
+      <footer>
+        <div
+          class="mobile:hidden desktop:block desktop:w-full desktop:h-[489px]"
+        >
+          <div
+            class="desktop:w-full desktop:h-[397px] desktop:bg-tint-blue desktop:pl-[160px] desktop:pt-[96px] desktop:dark:bg-gray-blue"
+          >
+            <!-- content -->
+            <div
+              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+            >
+              <div>
+                <img
+                  class="desktop:w-[160px] desktop:h-[32px]"
+                  src="./public/svg/logo.svg"
+                  alt=""
+                />
+                <p
+                  class="desktop:font-medium desktop:text-white/80 desktop:w-[399px] desktop:mt-[24px]"
+                >
+                  We are always open to discuss your project and improve your
+                  online presence.
+                </p>
+              </div>
+              <div>
+                <h2 class="desktop:text-white">Lets Talk!</h2>
+                <p
+                  class="desktop:font-normal desktop:text-grey/80 desktop:w-[399px] desktop:mt-[14px] desktop:mb-[28px]"
+                >
+                  We are always open to discuss your project, improve your
+                  online presence and help with your UX/UI design challenges.
+                </p>
+                <div
+                  class="desktop:w-[144px] desktop:h-[16px] desktop:flex desktop:justify-between"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/instagram.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- content -->
+
+            <!-- contact -->
+            <div
+              class="desktop:w-[517px] desktop:h-[95px] desktop:bg-yellow desktop:flex desktop:items-center"
+            >
+              <div
+                class="desktop:w-[343px] desktop:h-[62px] desktop:flex desktop:gap-x-[29px] desktop:pl-[37px]"
+              >
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Email me at
+                  </p>
+                  <p class="desktop:font-normal desktop:text-dark-blue/80">
+                    contact@website.com
+                  </p>
+                </div>
+
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Call us
+                  </p>
+                  <p
+                    class="desktop:font-normal desktop:text-dark-blue/80 desktop:w-[133px] desktop:h-[28px]"
+                  >
+                    0927 6277 28525
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+          </div>
+
+          <!-- copyright -->
+          <div
+            class="desktop:w-full desktop:h-[92px] desktop:bg-white desktop:flex desktop:px-[160px] desktop:justify-between desktop:items-center desktop:dark:bg-dark-gray"
+          >
+            <p
+              class="desktop:text-dark-blue desktop:font-medium desktop:w-[241px] desktop:dark:text-white"
+            >
+              Copyright 2022, Finsweet.com
+            </p>
+            <div
+              class="desktop:w-[437px] desktop:font-medium desktop:text-[16px] desktop:leading-[28px] desktop:text-dark-blue desktop:flex desktop:justify-between desktop:dark:text-white"
+            >
+              <a
+                href="index.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >About us</a
+              >
+              <a
+                href="features.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Features</a
+              >
+              <a
+                href="pricing.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#faq"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >FAQ</a
+              >
+              <a
+                href="blog.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[750px] mobile:bg-tint-blue mobile:dark:bg-gray-blue mobile:px-[30px] mobile:pt-[60px] desktop:hidden"
+        >
+          <!-- content -->
+          <div class="mobile:max-w-[580px] mobile:mx-auto">
+            <div>
+              <img
+                class="mobile:mb-[10px]"
+                src="./public/svg/logo.svg"
+                alt=""
+              />
+              <p
+                class="mobile:font-medium mobile:text-white/80 mobile:mb-[20px]"
+              >
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+
+              <!-- contact -->
+              <div
+                class="mobile:w-[360px] mx-auto mobile:p-[10px] mobile:bg-yellow mobile:flex mobile:items-center mobile:mb-[30px]"
+              >
+                <div class="mobile:flex mobile:gap-x-[15px]">
+                  <div>
+                    <p
+                      class="mobile:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Email me at
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      contact@website.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <p
+                      class="desktop:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Call us
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      0927 6277 28525
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+            </div>
+            <div>
+              <h2 class="mobile:text-white">Lets Talk!</h2>
+              <p
+                class="mobile:font-normal mobile:text-grey/80 mobile:mb-[40px]"
+              >
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div
+                class="mobile:mx-auto mobile:flex mobile:justify-between mobile:h-[30px] mobile:w-[300px] mobile:mb-[35px]"
+              >
+                <img src="./public/svg/facebook.svg" alt="" />
+                <img src="./public/svg/twitter.svg" alt="" />
+                <img src="./public/svg/instagram.svg" alt="" />
+                <img src="./public/svg/linkedin.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div>
+              <div
+                class="mobile:h-[200px] mobile:font-medium mobile:text-[16px] mobile:text-grey/80 mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[10px] mobile:items-center"
+              >
+                <a
+                  href="index.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >About us</a
+                >
+                <a
+                  href="features.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Blog</a
+                >
+              </div>
+              <p
+                class="mobile:text-white mobile:font-medium mobile:text-center mobile:text-[13px] mobile:mt-[35px]"
+              >
+                Copyright 2022, Finsweet.com
+              </p>
+            </div>
+            <!-- copyright -->
+          </div>
+          <!-- content -->
+        </div>
+        <!-- mobile -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- wrapper -->
+  </body>
+</html>

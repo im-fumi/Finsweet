@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:box-border">
+      <!-- header -->
+      <header>
+        <div
+          class="mobile:hidden desktop:w-full desktop:h-[92px] desktop:bg-tint-blue desktop:flex desktop:justify-between desktop:items-center desktop:px-[160px] desktop:dark:bg-gray-blue"
+        >
+          <div class="desktop:w-[122px] desktop:h-[24.71px]">
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+          <nav>
+            <div class="mobile:hidden desktop:flex desktop:gap-x-[48px]">
+              <div
+                class="desktop:w-[448px] desktop:flex desktop:gap-x-[32px] desktop:text-[#BBBBCB] desktop:text-[16px] desktop:leading-7 desktop:items-center desktop:font-medium"
+              >
+                <a
+                  href="index.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="desktop:min-w-fit desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >About Us</a
+                >
+                <a
+                  href="features.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="contact.html"
+                class="desktop:w-[185px] desktop:h-[60px] desktop:border-2 desktop:rounded-[41px] desktop:border-[#F4F6FC33] desktop:text-white desktop:font-medium desktop:text-center desktop:leading-[60px] desktop:hover:text-dark-blue desktop:hover:font-semibold desktop:hover:bg-grey desktop:transition-colors desktop:duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[70px] mobile:bg-tint-blue mobile:flex mobile:items-center mobile:justify-between mobile:px-[30px] mobile:relative mobile:dark:bg-gray-blue desktop:hidden"
+        >
+          <div>
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+
+          <div>
+            <!-- hamburger -->
+            <label
+              for="show"
+              class="mobile:w-[40px] mobile:h-[40px] mobile:rounded-[7px] mobile:cursor-pointer"
+            >
+              <div class="mobile:pt-[7px]">
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+              </div>
+            </label>
+            <input
+              type="radio"
+              id="show"
+              name="menu"
+              class="mobile:hidden peer"
+            />
+            <!-- hamburger -->
+
+            <div
+              class="mobile:w-full mobile:h-dvh mobile:flex mobile:justify-between mobile:bg-tint-blue mobile:absolute mobile:top-0 mobile:-left-[100%] mobile:px-[30px] mobile:py-[10px] mobile:peer-checked:left-0 mobile:transition-all mobile:duration-500 mobile:dark:bg-gray-blue"
+            >
+              <div
+                class="mobile:w-[200px] mobile:flex mobile:flex-wrap mobile:flex-col"
+              >
+                <div class="mobile:py-[10px]">
+                  <a href="index.html" class="mobile:text-grey">Home</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="about.html" class="mobile:text-grey">About us</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="features.html" class="mobile:text-grey">Features</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="pricing.html" class="mobile:text-grey">Pricing</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="#faq" class="mobile:text-grey">FAQ</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="blog.html" class="mobile:text-grey">Blog</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="contact.html" class="mobile:text-grey">Contact Us</a>
+                </div>
+              </div>
+
+              <label
+                for="close"
+                class="mobile:w-[30px] mobile:h-[30px] mobile:text-[25px] mobile:text-white mobile:pl-[5px] mobile:cursor-pointer"
+                >&times;</label
+              >
+              <input
+                type="radio"
+                name="menu"
+                id="close"
+                class="mobile:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+      </header>
+      <!-- header -->
+
+      <!-- Hero -->
+      <div
+        class="mobile:w-full mobile:bg-tint-blue mobile:py-[50px] mobile:px-[30px] mobile:dark:bg-gray-blue desktop:h-[668px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="desktop:flex desktop:justify-between desktop:w-[1280px] desktop:mx-auto desktop:items-center"
+        >
+          <div class="desktop:w-[582px] desktop:h-[414px]">
+            <div class="mobile:text-white desktop:h-[302px]">
+              <h1
+                class="mobile:mb-[12px] mobile:text-center desktop:h-[222px] desktop:mb-[24px] desktop:text-left"
+              >
+                Building stellar websites for early startups
+              </h1>
+              <p
+                class="mobile:text-white/70 mobile:text-center mobile:text-[15px] mobile:font-normal mobile:mb-[20px] desktop:w-[500px] desktop:h-[56px] desktop:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+
+            <div
+              class="mobile:flex mobile:justify-between mobile:items-center mobile:mx-auto mobile:w-[300px] mobile:mb-[32px] desktop:gap-x-[40px] desktop:justify-start desktop:mt-[48px] desktop:w-[450px] desktop:mx-0 desktop:mb-0"
+            >
+              <a
+                href="work.html"
+                class="mobile:block mobile:w-[160px] mobile:h-[50px] mobile:rounded-[41px] mobile:text-[#1B1C2B] mobile:font-semibold mobile:bg-yellow mobile:leading-[50px] mobile:text-center desktop:w-[230px] desktop:h-[64px] desktop:text-[18px] desktop:leading-[64px]"
+              >
+                View our work
+              </a>
+              <a
+                href="pricing.html"
+                class="mobile:w-[120px] mobile:h-[30px] mobile:flex mobile:gap-x-[8px] mobile:items-center mobile:text-white mobile:text-[13px] desktop:w-[138px] desktop:h-[28px] desktop:text-[16px]"
+                >View Pricing
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/whitearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile:mx-auto desktop:w-[638px] desktop:h-[361px]">
+            <img
+              class="mobile:mx-auto"
+              src="./public/svg/illustration.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Hero -->
+
+      <!-- How we work -->
+      <div
+        class="mobile:w-full mobile:h-[670px] mobile:py-[55px] mobile:bg-grey mobile:dark:bg-chetwode desktop:h-[661px] desktop:py-[128px]"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1203px] desktop:h-[405px] desktop:flex desktop:justify-between desktop:max-w-none"
+        >
+          <div
+            class="mobile:w-[300px] mobile:mx-auto mobile:mb-[40px] mobile:flex mobile:flex-wrap mobile:justify-center mobile:gap-y-[3px] desktop:w-[405px] desktop:h-[184px] desktop:justify-start desktop:mb-0 desktop:mx-0 desktop:gap-y-0"
+          >
+            <h2>How we work</h2>
+            <p
+              class="mobile:description mobile:mb-[10px] mobile:text-center mobile:w-[310px] mobile:dark:text-white/70 desktop:h-[56px] desktop:w-[350px] desktop:text-start"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <a
+              href="contact.html"
+              class="mobile:text-royal-blue mobile:font-[ItalicPoppins] mobile:font-medium mobile:flex mobile:items-center mobile:gap-x-[8px] mobile:dark:text-royal-blue/80 desktop:w-[244px] desktop:h-[32px] desktop:text-[18px] desktop:leading-[32px] desktop:gap-x-[16px]"
+              >Get in touch with us
+              <img
+                class="mobile:arrow"
+                src="./public/svg/purplearrow.svg"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!-- cards -->
+          <div
+            class="mobile:max-w-[580px] mobile:mx-auto mobile:h-[450px] mobile:px-[30px] mobile:justify-around mobile:flex mobile:flex-wrap desktop:w-[656px] desktop:h-[405px] desktop:flex-row desktop:content-between desktop:justify-normal desktop:px-0 desktop:max-w-none"
+          >
+            <!-- card -->
+            <div
+              class="mobile:w-[180px] mobile:h-[200px] desktop:w-[328px] desktop:h-[178px]"
+            >
+              <img
+                class="desktop:w-[50px] desktop:h-[50px]"
+                src="./public/svg/pointer1.svg"
+                alt=""
+              />
+              <h5 class="mobile:my-[3px] desktop:mt-[16px] desktop:mb-[8px]">
+                Strategy
+              </h5>
+              <p class="mobile:description desktop:h-[56px] desktop:w-[300px]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div
+              class="mobile:w-[180px] mobile:h-[200px] desktop:w-[328px] desktop:h-[178px]"
+            >
+              <img
+                class="desktop:w-[50px] desktop:h-[50px]"
+                src="./public/svg/pointer2.svg"
+                alt=""
+              />
+              <h5 class="mobile:my-[3px] desktop:mt-[16px] desktop:mb-[8px]">
+                Wireframing
+              </h5>
+              <p class="mobile:description desktop:h-[56px] desktop:w-[300px]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div
+              class="mobile:w-[180px] mobile:h-[200px] desktop:w-[328px] desktop:h-[178px]"
+            >
+              <img
+                class="desktop:w-[50px] desktop:h-[50px]"
+                src="./public/svg/pointer3.svg"
+                alt=""
+              />
+              <h5 class="mobile:my-[3px] desktop:mt-[16px] desktop:mb-[8px]">
+                Design
+              </h5>
+              <p class="mobile:description desktop:h-[56px] desktop:w-[300px]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div
+              class="mobile:w-[180px] mobile:h-[200px] desktop:w-[328px] desktop:h-[178px]"
+            >
+              <img
+                class="desktop:w-[50px] desktop:h-[50px]"
+                src="./public/svg/pointer4.svg"
+                alt=""
+              />
+              <h5 class="mobile:my-[3px] desktop:mt-[16px] desktop:mb-[8px]">
+                Development
+              </h5>
+              <p class="mobile:description desktop:h-[56px] desktop:w-[300px]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- cards -->
+        </div>
+      </div>
+      <!-- How we work -->
+
+      <!-- Our Projects -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:py-[40px] mobile:dark:bg-dark-gray desktop:h-[984px] desktop:flex desktop:items-center desktop:justify-center"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:px-[30px] mobile:mx-auto desktop:w-[1280px] desktop:h-[728px] desktop:px-0 desktop:max-w-none desktop:mx-0"
+        >
+          <!-- header -->
+          <div
+            class="mobile:flex mobile:justify-between mobile:mb-[20px] desktop:h-[64px] desktop:items-center desktop:mb-[64px]"
+          >
+            <h2>View our projects</h2>
+            <a
+              href="work.html"
+              class="mobile:text-[13px] mobile:flex mobile:items-center mobile:gap-x-[8px] mobile:text-dark-blue mobile:dark:text-black desktop:view"
+              >View More
+              <img
+                class="mobile:arrow"
+                src="./public/svg/bluearrow.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- header -->
+
+          <!-- content -->
+          <div
+            class="desktop:h-[600px] desktop:w-[1280px] desktop:flex desktop:flex-wrap desktop:flex-col desktop:gap-y-[30px]"
+          >
+            <!--left card-->
+            <div
+              class="mobile:max-w-[580px] mobile:mx-auto mobile:relative mobile:mb-[10px] desktop:w-[843px] desktop:relative desktop:mb-0 desktop:max-w-none"
+            >
+              <img
+                class="mobile:mx-auto mobile:w-[530px] mobile:h-[320px] mobile:object-cover desktop:h-[600px] desktop:w-[843px]"
+                src="./public/images/project/picture-1.png"
+                alt=""
+              />
+              <div
+                class="mobile:w-[215px] mobile:h-[320px] mobile:absolute mobile:top-0 mobile:left-0 mobile:px-[10px] mobile:pt-[130px] mobile:bg-gradient-to-tl from-tint-blue/100 to-tint-blue/40 desktop:pl-[48px] mobile:font-semibold desktop:w-[396px] desktop:h-[600px] desktop:pt-0 desktop:px-0"
+              >
+                <p
+                  class="mobile:text-white mobile:text-[16px] mobile:font-semibold mobile:mb-[8px] desktop:w-[313px] desktop:h-[72px] desktop:text-[24px] desktop:leading-[36px] desktop:mt-[312px]"
+                >
+                  Workhub office Webflow Webflow Design
+                </p>
+                <p
+                  class="mobile:text-white/80 mobile:w-[200px] mobile:font-normal mobile:text-[11px] mobile:mb-[20px] desktop:w-[293px] desktop:h-[56px] desktop:font-normal desktop:text-[16px] desktop:leading-[28px] desktop:mt-[16px] desktop:mb-[40px]"
+                >
+                  Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                  aliquam
+                </p>
+                <a class="mobile:text-yellow mobile:view" href="#"
+                  >View project
+                  <img
+                    class="mobile:arrow"
+                    src="./public/svg/yellowarrow.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!--left card-->
+
+            <!-- right card-->
+            <div
+              class="mobile:mx-auto mobile:relative mobile:w-[420px] mobile:h-[200px] desktop:w-[405px] desktop:h-[284px] desktop:mx-0"
+            >
+              <img
+                class="mobile:w-[420px] mobile:h-[200px] mobile:object-cover desktop:w-[405px] desktop:h-[284px]"
+                src="./public/images/project/picture-2.png"
+                alt=""
+              />
+              <div
+                class="mobile:w-[420px] mobile:h-[200px] mobile:absolute mobile:top-0 mobile:left-0 mobile:bg-gradient-to-tl from-tint-blue/100 to-tint-blue/40 mobile:font-semibold mobile:pl-[30px] desktop:w-[405px] desktop:h-[284px] desktop:pl-[56px]"
+              >
+                <p
+                  class="mobile:font-semibold mobile:text-white mobile:text-[16px] mobile:mt-[80px] mobile:mb-[8px] desktop:w-[313px] desktop:h-[72px] desktop:text-[24px] desktop:leading-[36px] desktop:mt-[129px] desktop:mb-[10px]"
+                >
+                  Unisaas Website<br />Design
+                </p>
+                <a
+                  class="mobile:text-yellow mobile:view desktop:w-[150px]"
+                  href="#"
+                  >View portfolio
+                  <img
+                    class="desktop:arrow"
+                    src="./public/svg/yellowarrow.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!--right card-->
+
+            <!--right card-->
+            <div class="desktop:w-[405px] desktop:h-[284px]">
+              <img
+                class="mobile:block mobile:mx-auto mobile:w-[420px] mobile:h-[200px] mobile:object-cover mobile:mt-[10px] desktop:w-[405px] desktop:h-[284px] desktop:mt-0 desktop:mx-0"
+                src="./public/images/project/picture-3.png"
+                alt=""
+              />
+            </div>
+            <!--right card-->
+          </div>
+          <!-- content -->
+        </div>
+      </div>
+      <!-- Our Projects -->
+
+      <!-- features -->
+      <div
+        class="mobile:bg-grey mobile:w-full mobile:mx-auto mobile:h-[1000px] mobile:py-[50px] mobile:dark:bg-chetwode desktop:h-[1191px] desktop:py-[128px]"
+      >
+        <!-- header -->
+        <div
+          class="mobile:h-[200px] mobile:w-[480px] mobile:px-[30px] mobile:mb-[10px] mobile:mx-auto desktop:w-[630px] desktop:h-[232px] desktop:mb-[47px]"
+        >
+          <p
+            class="mobile:text-[12px] mobile:font-normal mobile:text-center mobile:dark:text-white/70 desktop:text-[16px] desktop:leading-[28px]"
+          >
+            Features
+          </p>
+          <h2 class="mobile:text-center desktop:mt-[10px]">
+            Design that solves problems, one product at a time
+          </h2>
+        </div>
+        <!-- header -->
+
+        <!-- cards -->
+        <div
+          class="mobile:max-w-[580px] mobile:h-[700px] mobile:mx-auto mobile:px-[20px] mobile:flex mobile:flex-wrap mobile:justify-between mobile:gap-y-[10px] desktop:mx-auto desktop:w-[1280px] desktop:h-[656px] desktop:content-center desktop:justify-normal desktop:gap-x-[32px] desktop:gap-y-[24px] desktop:px-0 desktop:max-w-none"
+        >
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[32px] desktop:h-[28px] desktop:mb-0"
+              src="./public/svg/feature/client.svg"
+              alt=""
+            />
+            <div>
+              <h6>Uses Client First</h6>
+              <p
+                class="mobile:description mobile:line-clamp-6 desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[32px] desktop:h-[32px]"
+              src="./public/svg/feature/revision.svg"
+              alt=""
+            />
+            <div>
+              <h6>Two Free Revision Round</h6>
+              <p
+                class="mobile:description mobile:line-clamp-5 desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[35px] desktop:h-[35px]"
+              src="./public/svg/feature/customization.svg"
+              alt=""
+            />
+            <div>
+              <h6>Template Customization</h6>
+              <p
+                class="mobile:description mobile:line-clamp-5 mobile:mt-[4px] desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[35px] desktop:h-[35px]"
+              src="./public/svg/feature/support.svg"
+              alt=""
+            />
+            <div>
+              <h6>24/7 Support</h6>
+              <p
+                class="mobile:description mobile:line-clamp-6 desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[35px] desktop:h-[35px]"
+              src="./public/svg/feature/delivery.svg"
+              alt=""
+            />
+            <div>
+              <h6>Quick Delivery</h6>
+              <p
+                class="mobile:description mobile:line-clamp-6 desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- card -->
+          <div
+            class="mobile:w-[220px] mobile:h-[220px] mobile:p-[20px] mobile:bg-white mobile:dark:bg-dark-gray desktop:w-[405px] desktop:h-[316px] desktop:p-[48px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-between"
+          >
+            <img
+              class="mobile:w-[25px] mobile:h-[25px] mobile:mb-[8px] desktop:w-[34px] desktop:h-[34px]"
+              src="./public/svg/feature/hand.svg"
+              alt=""
+            />
+            <div>
+              <h6>Hands-on approach</h6>
+              <p
+                class="mobile:description mobile:line-clamp-5 desktop:w-[324px] desktop:mt-[12px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+                aliquam sed mi.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <!-- cards -->
+      </div>
+      <!-- features -->
+
+      <!-- testimonials -->
+      <div
+        class="mobile:w-full mobile:mx-auto mobile:bg-grey/50 mobile:h-[420px] mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-dark-gray desktop:h-[506px] desktop:flex desktop:justify-center desktop:gap-x-[110px] desktop:px-0 desktop:py-0 desktop:max-w-none desktop:mx-0"
+      >
+        <!-- header -->
+        <div class="desktop:w-[327px] desktop:h-[184px] desktop:mt-[130px]">
+          <h3 class="mobile:text-center desktop:text-left">
+            What our clients say about us
+          </h3>
+          <p
+            class="mobile:description mobile:text-center mobile:mt-[6px] desktop:description desktop:mt-[16px] desktop:text-left"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+          </p>
+        </div>
+        <!-- header -->
+        <!-- content -->
+        <div
+          class="mobile:mt-[20px] mobile:max-w-[580px] mobile:mx-auto desktop:w-[843px] desktop:h-[250px] desktop:mt-[128px] desktop:mx-0 desktop:max-w-none"
+        >
+          <h5>
+            "The best agency we’ve worked with so far. They understand our
+            product and are able to add new features with a great focus."
+          </h5>
+
+          <div
+            class="mobile:flex mobile:justify-between mobile:mt-[20px] desktop:mt-[48px]"
+          >
+            <!-- profile -->
+            <div
+              class="mobile:flex mobile:w-[180px] mobile:items-center mobile:justify-between desktop:w-[249px] desktop:h-[56px]"
+            >
+              <div
+                class="desktop:w-[52px] desktop:h-[52px] desktop:rounded-full"
+              >
+                <img
+                  class="mobile:w-[50px] mobile:h-[50px] mobile:object-cover mobile:rounded-full desktop:w-[52px] desktop:h-[52px]"
+                  src="./public/images/testimonials/picture.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div
+                  class="mobile:text-dark-blue mobile:dark:text-white mobile:font-normal desktop:w-[183px] desktop:h-[32px] desktop:text-[18px] desktop:leading-[32px]"
+                >
+                  Jenny Wilson
+                </div>
+                <div
+                  class="mobile:text-dark-blue mobile:font-normal mobile:dark:text-white desktop:w-[183px] desktop:h-[28px] desktop:text-[12px] desktop:leading-[28px]"
+                >
+                  Vice President
+                </div>
+              </div>
+            </div>
+            <!-- profile -->
+            <!-- arrows -->
+            <div
+              class="mobile:flex mobile:gap-x-[8px] desktop:w-[107px] desktop:h-[48px] desktop:gap-x-[11px]"
+            >
+              <img
+                class="mobile:w-[38px] mobile:h-[38px] desktop:w-[48px] desktop:h-[48px]"
+                src="./public/svg/testimonial/previous.svg"
+                alt=""
+              />
+              <img
+                class="mobile:w-[35px] mobile:h-[35px] desktop:w-[48px] desktop:h-[48px]"
+                src="./public/svg/testimonial/next.svg"
+                alt=""
+              />
+            </div>
+            <!-- arrows -->
+          </div>
+        </div>
+        <!-- content -->
+      </div>
+      <!-- testimonials -->
+
+      <!-- FAQ -->
+      <div
+        id="faq"
+        class="mobile:w-full mobile:bg-white mobile:py-[60px] mobile:px-[30px] mobile:dark:bg-dark-gray desktop:h-[793px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="mobile:mx-auto mobile:max-w-[580px] desktop:w-[1283px] desktop:h-[537px] desktop:flex desktop:justify-between desktop:max-w-none"
+        >
+          <!-- heading -->
+          <div
+            class="mobile:mb-[30px] desktop:w-[328px] desktop:h-[160px] desktop:mb-0"
+          >
+            <h3 class="mobile:mb-[6px] desktop:mb-[16px]">
+              Frequently asked questions
+            </h3>
+            <a
+              href="contact.html"
+              class="mobile:font-medium mobile:text-[15px] mobile:text-royal-blue desktop:w-[220px] desktop:leading-[32px] desktop:text-[18px]"
+            >
+              Contact us for more info
+            </a>
+          </div>
+          <!-- heading -->
+
+          <!-- questions -->
+          <div
+            class="mobile:max-w-[580px] desktop:w-[846px] desktop:h-[530px] desktop:max-w-none"
+          >
+            <div
+              class="mobile:flex mobile:flex-wrap mobile:justify-between mobile:mb-[20px] desktop:items-center desktop:mb-[48px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:gap-x-[20px] mobile:leading-[45px] desktop:gap-x-[59px]"
+              >
+                <h6
+                  class="mobile:text-royal-blue mobile:leading-[45px] desktop:w-[24px] desktop:h-[36px]"
+                >
+                  01
+                </h6>
+                <h6 class="desktop:h-[36px]">How much time does it take?</h6>
+              </div>
+
+              <button
+                onclick="myToggle()"
+                class="mobile:text-[30px] mobile:text-dark-blue"
+              >
+                &times;
+              </button>
+
+              <div
+                id="dropdown"
+                class="mobile:mt-[6px] mobile:hidden desktop:w-[624px] desktop:h-[62px]"
+              >
+                <p
+                  class="mobile:text-dark-blue/85 mobile:text-[14px] mobile:pl-[45px] mobile:font-medium mobile:dark:text-white/70 desktop:pl-[83px] desktop:h-[62px] desktop:w-[624px] desktop:text-[18px] desktop:leading-[32px]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[53px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[30px] desktop:h-[36px]"
+                  >
+                    02
+                  </h6>
+                  <h6>What is your class naming convention?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]r"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[53px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[30px] desktop:h-[36px]"
+                  >
+                    03
+                  </h6>
+                  <h6>How do you communicate?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:flex desktop:w-[816px] desktop:justify-between desktop:items-center"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[52px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[31px] desktop:h-[36px]"
+                  >
+                    04
+                  </h6>
+                  <h6>I have a bigger project. Can you handle it?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[52px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[31px] desktop:h-[36px]"
+                  >
+                    05
+                  </h6>
+                  <h6>What is your class naming convention?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- questions -->
+        </div>
+      </div>
+      <!-- FAQ -->
+
+      <!-- contact -->
+      <div
+        class="mobile:w-full mobile:bg-white mobile:flex mobile:justify-center mobile:px-[30px] mobile:pb-[60px] mobile:dark:bg-dark-gray desktop:h-[819px]"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:dark:bg-gray-blue desktop:w-[1280px] desktop:h-[691px] desktop:mx-auto desktop:bg-tint-blue desktop:flex desktop:max-w-none"
+        >
+          <!-- picture -->
+          <div
+            class="mobile:max-w-[580px] mobile:h-[280px] mobile:relative desktop:w-[656px] desktop:h-[691px] desktop:max-w-none"
+          >
+            <img
+              class="mobile:w-[580px] mobile:max-h-[280px] mobile:object-cover desktop:w-[656px] desktop:h-[691px] desktop:max-h-none"
+              src="./public/images/contact/picture.jpg"
+              alt=""
+            />
+            <div
+              class="mobile:px-[30px] mobile:pt-[10px] mobile:absolute mobile:top-0 mobile:left-0 mobile:h-[280px] mobile:bg-tint-blue/50 desktop:w-[656px] desktop:h-[691px] desktop:px-[96px] desktop:pt-[96px]"
+            >
+              <div class="desktop:w-[464px] desktop:h-[334px]">
+                <h1>Building stellar websites for early startups</h1>
+                <p
+                  class="mobile:description mobile:mt-[4px] mobile:text-white desktop:mt-[24px]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  ut enim.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- picture -->
+
+          <!-- form -->
+          <div
+            class="mobile:max-w-[580px] mobile:px-[30px] mobile:py-[20px] mobile:bg-tint-blue desktop:w-[624px] desktop:h-[691px] desktop:px-[96px] desktop:pt-[96px] desktop:max-w-none desktop:pb-0"
+          >
+            <h5 class="mobile:text-white mobile:mb-[5px] desktop:mb-[16px]">
+              Send inquiry
+            </h5>
+            <p
+              class="mobile:text-grey mobile:text-[13px] mobile:w-[360px] desktop:w-[430px] desktop:text-[15px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+            <div
+              class="mobile:flex mobile:flex-wrap mobile:gap-y-[10px] mobile:my-[30px] mobile:justify-center desktop:w-[432px] desktop:h-[224px] desktop:gap-y-[16px] desktop:my-[40px]"
+            >
+              <input
+                class="mobile:input mobile:dark:bg-gray-blue"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="mobile:input mobile:dark:bg-gray-blue"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                class="mobile:input mobile:dark:bg-gray-blue"
+                type="url"
+                placeholder="Paste your Figma design URL"
+              />
+            </div>
+            <button
+              class="mobile:w-[300px] mobile:h-[50px] mobile:bg-yellow mobile:text-[15px] mobile:leading-[50px] mobile:rounded-[41px] mobile:mx-auto mobile:block mobile:mb-[20px] mobile:text-tint-blue mobile:font-semibold desktop:w-[432px] desktop:h-[64px] desktop:text-[18px] desktop:leading-[32px] desktop:mb-0"
+            >
+              Send an Inquiry
+            </button>
+            <a
+              href="contact.html"
+              class="mobile:text-white mobile:font-medium mobile:flex mobile:justify-center mobile:gap-x-[8px] desktop:mx-auto desktop:mt-[28px] desktop:w-[244px] desktop:h-[32px] desktop:text-[18px] desktop:leading-[32px] desktop:gap-x-[16px]"
+              >Get in touch with us
+              <img
+                class="mobile:arrow"
+                src="./public/svg/whitearrow.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- form -->
+        </div>
+      </div>
+      <!-- contact -->
+
+      <!-- blog -->
+      <div
+        class="mobile:w-full mobile:px-[30px] mobile:pb-[60px] mobile:bg-white mobile:dark:bg-dark-gray desktop:h-[865px] desktop:pb-0 desktop:px-0"
+      >
+        <div
+          class="mobile:mx-auto mobile:max-w-[580px] desktop:w-[1280px] desktop:h-[737px] desktop:max-w-none"
+        >
+          <h2 class="mobile:mb-[20px] desktop:mb-[64px]">Our Blog</h2>
+          <!-- content -->
+          <div class="desktop:flex desktop:gap-x-[32px]">
+            <div
+              class="mobile:max-w-[580px] mobile:mb-[30px] desktop:w-[405px] desktop:h-[609px] desktop:max-w-none desktop:mb-0"
+            >
+              <img
+                class="mobile:mb-[20px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[40px]"
+                src="./public/images/blog/picture-1.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">19 Jan 2022</p>
+              <h6 class="mobile:my-[6px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                class="mobile:view mobile:mt-[10px] desktop:mt-[32px]"
+                href="#"
+              >
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:max-w-[580px] mobile:mb-[30px] desktop:w-[405px] desktop:h-[609px] desktop:mb-0 desktop:max-w-none"
+            >
+              <img
+                class="mobile:mb-[20px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[40px]"
+                src="./public/images/blog/picture-2.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">19 Jan 2022</p>
+              <h6 class="mobile:my-[6px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                class="mobile:view mobile:mt-[10px] desktop:mt-[32px]"
+                href="#"
+              >
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="mobile:max-w-[580px] desktop:w-[405px] desktop:h-[609px] desktop:max-w-none"
+            >
+              <img
+                class="mobile:mb-[20px] desktop:w-[405px] desktop:h-[285px] desktop:mb-[40px]"
+                src="./public/images/blog/picture-3.jpg"
+                alt=""
+              />
+              <p class="mobile:description mobile:font-medium">19 Jan 2022</p>
+              <h6 class="mobile:my-[6px] desktop:my-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="mobile:description">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                class="mobile:view mobile:mt-[10px] desktop:mt-[32px]"
+                href="#"
+              >
+                Read More
+                <img
+                  class="mobile:arrow"
+                  src="./public/svg/bluearrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+        </div>
+      </div>
+      <!-- blog -->
+
+      <!-- footer -->
+      <footer>
+        <div
+          class="mobile:hidden desktop:block desktop:w-full desktop:h-[489px]"
+        >
+          <div
+            class="desktop:w-full desktop:h-[397px] desktop:bg-tint-blue desktop:pl-[160px] desktop:pt-[96px] desktop:dark:bg-gray-blue"
+          >
+            <!-- content -->
+            <div
+              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+            >
+              <div>
+                <img
+                  class="desktop:w-[160px] desktop:h-[32px]"
+                  src="./public/svg/logo.svg"
+                  alt=""
+                />
+                <p
+                  class="desktop:font-medium desktop:text-white/80 desktop:w-[399px] desktop:mt-[24px]"
+                >
+                  We are always open to discuss your project and improve your
+                  online presence.
+                </p>
+              </div>
+              <div>
+                <h2 class="desktop:text-white">Lets Talk!</h2>
+                <p
+                  class="desktop:font-normal desktop:text-grey/80 desktop:w-[399px] desktop:mt-[14px] desktop:mb-[28px]"
+                >
+                  We are always open to discuss your project, improve your
+                  online presence and help with your UX/UI design challenges.
+                </p>
+                <div
+                  class="desktop:w-[144px] desktop:h-[16px] desktop:flex desktop:justify-between"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/instagram.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- content -->
+
+            <!-- contact -->
+            <div
+              class="desktop:w-[517px] desktop:h-[95px] desktop:bg-yellow desktop:flex desktop:items-center"
+            >
+              <div
+                class="desktop:w-[343px] desktop:h-[62px] desktop:flex desktop:gap-x-[29px] desktop:pl-[37px]"
+              >
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Email me at
+                  </p>
+                  <p class="desktop:font-normal desktop:text-dark-blue/80">
+                    contact@website.com
+                  </p>
+                </div>
+
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Call us
+                  </p>
+                  <p
+                    class="desktop:font-normal desktop:text-dark-blue/80 desktop:w-[133px] desktop:h-[28px]"
+                  >
+                    0927 6277 28525
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+          </div>
+
+          <!-- copyright -->
+          <div
+            class="desktop:w-full desktop:h-[92px] desktop:bg-white desktop:flex desktop:px-[160px] desktop:justify-between desktop:items-center desktop:dark:bg-dark-gray"
+          >
+            <p
+              class="desktop:text-dark-blue desktop:font-medium desktop:w-[241px] desktop:dark:text-white"
+            >
+              Copyright 2022, Finsweet.com
+            </p>
+            <div
+              class="desktop:w-[437px] desktop:font-medium desktop:text-[16px] desktop:leading-[28px] desktop:text-dark-blue desktop:flex desktop:justify-between desktop:dark:text-white"
+            >
+              <a
+                href="index.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >About us</a
+              >
+              <a
+                href="features.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Features</a
+              >
+              <a
+                href="pricing.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#faq"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >FAQ</a
+              >
+              <a
+                href="blog.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[750px] mobile:bg-tint-blue mobile:dark:bg-gray-blue mobile:px-[30px] mobile:pt-[60px] desktop:hidden"
+        >
+          <!-- content -->
+          <div class="mobile:max-w-[580px] mobile:mx-auto">
+            <div>
+              <img
+                class="mobile:mb-[10px]"
+                src="./public/svg/logo.svg"
+                alt=""
+              />
+              <p
+                class="mobile:font-medium mobile:text-white/80 mobile:mb-[20px]"
+              >
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+
+              <!-- contact -->
+              <div
+                class="mobile:w-[360px] mx-auto mobile:p-[10px] mobile:bg-yellow mobile:flex mobile:items-center mobile:mb-[30px]"
+              >
+                <div class="mobile:flex mobile:gap-x-[15px]">
+                  <div>
+                    <p
+                      class="mobile:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Email me at
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      contact@website.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <p
+                      class="desktop:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Call us
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      0927 6277 28525
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+            </div>
+            <div>
+              <h2 class="mobile:text-white">Lets Talk!</h2>
+              <p
+                class="mobile:font-normal mobile:text-grey/80 mobile:mb-[40px]"
+              >
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div
+                class="mobile:mx-auto mobile:flex mobile:justify-between mobile:h-[30px] mobile:w-[300px] mobile:mb-[35px]"
+              >
+                <img src="./public/svg/facebook.svg" alt="" />
+                <img src="./public/svg/twitter.svg" alt="" />
+                <img src="./public/svg/instagram.svg" alt="" />
+                <img src="./public/svg/linkedin.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div>
+              <div
+                class="mobile:h-[200px] mobile:font-medium mobile:text-[16px] mobile:text-grey/80 mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[10px] mobile:items-center"
+              >
+                <a
+                  href="index.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >About us</a
+                >
+                <a
+                  href="features.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Blog</a
+                >
+              </div>
+              <p
+                class="mobile:text-white mobile:font-medium mobile:text-center mobile:text-[13px] mobile:mt-[35px]"
+              >
+                Copyright 2022, Finsweet.com
+              </p>
+            </div>
+            <!-- copyright -->
+          </div>
+          <!-- content -->
+        </div>
+        <!-- mobile -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- wrapper -->
+
+    <script>
+      function myToggle() {
+        var x = document.getElementById("dropdown");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

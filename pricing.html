@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:box-border">
+      <!-- header -->
+      <header>
+        <div
+          class="mobile:hidden desktop:w-full desktop:h-[92px] desktop:bg-tint-blue desktop:flex desktop:justify-between desktop:items-center desktop:px-[160px] desktop:dark:bg-gray-blue"
+        >
+          <div class="desktop:w-[122px] desktop:h-[24.71px]">
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+          <nav>
+            <div class="mobile:hidden desktop:flex desktop:gap-x-[48px]">
+              <div
+                class="desktop:w-[448px] desktop:flex desktop:gap-x-[32px] desktop:text-[#BBBBCB] desktop:text-[16px] desktop:leading-7 desktop:items-center desktop:font-medium"
+              >
+                <a
+                  href="index.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="desktop:min-w-fit desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >About Us</a
+                >
+                <a
+                  href="features.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="desktop:hover:text-white desktop:transition-all desktop:duration-200 desktop:hover:text-[18px]"
+                  >Blog</a
+                >
+              </div>
+              <a
+                href="contact.html"
+                class="desktop:w-[185px] desktop:h-[60px] desktop:border-2 desktop:rounded-[41px] desktop:border-[#F4F6FC33] desktop:text-white desktop:font-medium desktop:text-center desktop:leading-[60px] desktop:hover:text-dark-blue desktop:hover:font-semibold desktop:hover:bg-grey desktop:transition-colors desktop:duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[70px] mobile:bg-tint-blue mobile:flex mobile:items-center mobile:justify-between mobile:px-[30px] mobile:relative mobile:dark:bg-gray-blue desktop:hidden"
+        >
+          <div>
+            <img src="./public/svg/logo.svg" alt="" />
+          </div>
+
+          <div>
+            <!-- hamburger -->
+            <label
+              for="show"
+              class="mobile:w-[40px] mobile:h-[40px] mobile:rounded-[7px] mobile:cursor-pointer"
+            >
+              <div class="mobile:pt-[7px]">
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+                <div
+                  class="mobile:w-[30px] mobile:h-[4px] mobile:my-[4px] mobile:mx-[5px] mobile:bg-grey"
+                ></div>
+              </div>
+            </label>
+            <input
+              type="radio"
+              id="show"
+              name="menu"
+              class="mobile:hidden peer"
+            />
+            <!-- hamburger -->
+
+            <div
+              class="mobile:w-full mobile:h-dvh mobile:flex mobile:justify-between mobile:bg-tint-blue mobile:absolute mobile:top-0 mobile:-left-[100%] mobile:px-[30px] mobile:py-[10px] mobile:peer-checked:left-0 mobile:transition-all mobile:duration-500 mobile:dark:bg-gray-blue"
+            >
+              <div
+                class="mobile:w-[200px] mobile:flex mobile:flex-wrap mobile:flex-col"
+              >
+                <div class="mobile:py-[10px]">
+                  <a href="index.html" class="mobile:text-grey">Home</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="about.html" class="mobile:text-grey">About us</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="features.html" class="mobile:text-grey">Features</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="pricing.html" class="mobile:text-grey">Pricing</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="#faq" class="mobile:text-grey">FAQ</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="blog.html" class="mobile:text-grey">Blog</a>
+                </div>
+                <div class="mobile:py-[10px]">
+                  <a href="contact.html" class="mobile:text-grey">Contact Us</a>
+                </div>
+              </div>
+
+              <label
+                for="close"
+                class="mobile:w-[30px] mobile:h-[30px] mobile:text-[25px] mobile:text-white mobile:pl-[5px] mobile:cursor-pointer"
+                >&times;</label
+              >
+              <input
+                type="radio"
+                name="menu"
+                id="close"
+                class="mobile:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+      </header>
+      <!-- header -->
+
+      <!-- heading -->
+      <div
+        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:bg-white mobile:dark:bg-dark-gray desktop:pt-[128px] desktop:pb-[64px] desktop:px-0"
+      >
+        <div
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[562px] desktop:h-[136px] desktop:max-w-none"
+        >
+          <h2 class="mobile:text-center">Our Pricing Plans</h2>
+          <p
+            class="mobile:description mobile:text-center mobile:font-medium desktop:mt-[16px]"
+          >
+            When you’re ready to go beyond prototyping in Figma, Webflow is
+            ready to help you bring your designs to life — without coding them.
+          </p>
+        </div>
+      </div>
+      <!-- heading -->
+
+      <!-- cards -->
+      <div class="mobile:w-full mobile:bg-white mobile:dark:bg-dark-gray">
+        <div
+          class="mobile:max-w-[580px] mobile:pb-[60px] mobile:mx-auto desktop:w-[1282px] desktop:h-[745px] desktop:flex desktop:justify-between desktop:max-w-none desktop:pb-0"
+        >
+          <div
+            class="mobile:h-[530px] mobile:w-[380px] mobile:rounded-[12px] mobile:mx-auto mobile:bg-grey mobile:dark:bg-chetwode mobile:py-[50px] mobile:px-[40px] mobile:mb-[20px] desktop:w-[406px] desktop:h-[745px] desktop:pl-[48px] desktop:pt-[64px] desktop:pr-0 desktop:pb-0 desktop:mx-0 desktop:mb-0"
+          >
+            <div>
+              <div
+                class="mobile:flex mobile:items-center mobile:mb-[10px] mobile:gap-x-[8px] desktop:gap-x-[8px] desktop:mb-[20px]"
+              >
+                <h3>$299</h3>
+                <p
+                  class="mobile:text-royal-blue mobile:text-[15px] mobile:font-normal desktop:text-[16px]"
+                >
+                  Per Design
+                </p>
+              </div>
+              <h6 class="mobile:font-normal">Landing Page</h6>
+              <p class="mobile:description mobile:mt-[8px]">
+                When you’re ready to go beyond prototyping in Figma,
+              </p>
+
+              <div
+                class="mobile:h-[180px] mobile:w-[280px] mobile:my-[35px] mobile:flex mobile:flex-col mobile:flex-wrap mobile:justify-between desktop:w-[217px] desktop:h-[220px] desktop:content-between desktop:my-[78px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-dark-blue mobile:description">
+                    All limited links
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:flex desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-dark-blue mobile:description">
+                    Own analytics platform
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:flex desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-dark-blue mobile:description">
+                    Chat support
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:flex desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/grey.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-dark-blue/70 mobile:description">
+                    Optimize hashtags
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/grey.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-dark-blue/70 mobile:description">
+                    Unlimited users
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="policy.html"
+                class="mobile:block mobile:w-[200px] mobile:h-[55px] mobile:bg-dark-blue mobile:text-grey mobile:rounded-[41px] mobile:leading-[55px] mobile:text-center mobile:mx-auto desktop:w-[254px] desktop:h-[64px] desktop:text-[18px] desktop:leading-[64px] desktop:ml-[16px]"
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="mobile:h-[530px] mobile:w-[380px] mobile:rounded-[12px] mobile:mx-auto mobile:bg-tint-blue mobile:py-[50px] mobile:px-[40px] mobile:mb-[20px] mobile:relative mobile:overflow-hidden desktop:w-[406px] desktop:h-[745px] desktop:pl-[48px] desktop:pt-[64px] desktop:mb-0"
+          >
+            <div>
+              <div
+                class="mobile:flex mobile:items-center mobile:gap-x-[8px] mobile:mb-[10px] desktop:mb-[20px]"
+              >
+                <h3 class="mobile:text-white">$399</h3>
+                <p
+                  class="mobile:text-yellow mobile:font-normal mobile:text-[15px] desktop:text-[16px]"
+                >
+                  Multi Design
+                </p>
+              </div>
+              <h6 class="mobile:text-white mobile:font-normal">Website Page</h6>
+              <p
+                class="mobile:description mobile:mt-[8px] mobile:text-white/70"
+              >
+                When you’re ready to go beyond prototyping in Figma, Webflow’s
+                ready to help.
+              </p>
+
+              <div
+                class="mobile:h-[180px] mobile:w-[280px] mobile:my-[35px] mobile:flex mobile:flex-col mobile:flex-wrap mobile:justify-between desktop:w-[217px] desktop:h-[220px] desktop:content-between desktop:mt-[50px] desktop:mb-[79px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-white mobile:description">
+                    All limited links
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-white mobile:description">
+                    Own analytics platform
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-white mobile:description">
+                    Chat support
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-white mobile:description">
+                    Optimize hashtags
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:text-white mobile:description">
+                    Unlimited users
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="policy.html"
+                class="mobile:block mobile:w-[200px] mobile:h-[55px] mobile:bg-yellow mobile:text-dark-blue mobile:rounded-[41px] mobile:font-semibold mobile:leading-[55px] mobile:text-center mobile:mx-auto desktop:w-[254px] desktop:h-[64px] desktop:text-[18px] desktop:leading-[64px]"
+              >
+                Get started
+              </a>
+
+              <div
+                class="mobile:w-[1115px] mobile:h-[1115px] mobile:rounded-full mobile:bg-white/5 mobile:absolute mobile:-left-[360px] mobile:bottom-24 desktop:bottom-40"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="mobile:h-[530px] mobile:w-[380px] mobile:rounded-[12px] mobile:mx-auto mobile:bg-grey mobile:py-[50px] mobile:px-[40px] mobile:dark:bg-chetwode desktop:w-[406px] desktop:h-[745px] desktop:pl-[48px] desktop:pt-[64px] desktop:pb-0 desktop:mx-0"
+          >
+            <div>
+              <div
+                class="mobile:flex mobile:items-center mobile:mb-[10px] mobile:gap-x-[8px] desktop:gap-x-[18px] desktop:mb-[20px]"
+              >
+                <h3>$499 +</h3>
+                <p class="mobile:text-royal-blue mobile:font-normal">
+                  Per Design
+                </p>
+              </div>
+              <h6 class="mobile:font-normal">Complex Project</h6>
+              <p class="mobile:description mobile:mt-[8px]">
+                When you’re ready to go beyond prototyping in Figma,
+              </p>
+
+              <div
+                class="mobile:h-[215px] mobile:w-[280px] mobile:my-[25px] mobile:flex mobile:flex-col mobile:flex-wrap mobile:justify-between desktop:w-[217px] desktop:h-[268px] desktop:content-between desktop:mt-[44px] desktop:mb-[65px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    All limited links
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    Own analytics platform
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    Chat support
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    Optimize hashtags
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    Unlimited users
+                  </p>
+                </div>
+
+                <div
+                  class="mobile:flex mobile:gap-x-[10px] desktop:gap-x-[12px]"
+                >
+                  <img
+                    class="mobile:w-[16px] mobile:h-[28px]"
+                    src="./public/svg/green.svg"
+                    alt=""
+                  />
+                  <p class="mobile:description mobile:text-dark-blue">
+                    Assist and Help
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="contact.html"
+                class="mobile:block mobile:w-[200px] mobile:h-[55px] mobile:bg-dark-blue mobile:text-grey mobile:rounded-[41px] mobile:leading-[55px] mobile:text-center mobile:mx-auto desktop:block desktop:text-center desktop:w-[254px] desktop:h-[64px] desktop:bg-dark-blue desktop:text-[18px] desktop:leading-[64px] desktop:text-grey desktop:rounded-[41px] desktop:ml-[16px]"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards -->
+
+      <!-- FAQ -->
+      <div
+        id="faq"
+        class="mobile:w-full mobile:bg-white mobile:py-[60px] mobile:dark:bg-dark-gray mobile:pt-[60px] mobile:px-[30px] desktop:h-[793px] desktop:py-[128px] desktop:px-0"
+      >
+        <div
+          class="mobile:mx-auto mobile:max-w-[580px] desktop:mx-auto desktop:w-[1283px] desktop:h-[537px] desktop:flex desktop:justify-between desktop:max-w-none"
+        >
+          <!-- heading -->
+          <div
+            class="mobile:mb-[30px] desktop:w-[328px] desktop:h-[160px] desktop:mb-0"
+          >
+            <h3 class="mobile:mb-[6px] desktop:mb-[16px]">
+              Frequently asked questions
+            </h3>
+            <a
+              href="contact.html"
+              class="mobile:font-medium mobile:text-[15px] mobile:text-royal-blue desktop:w-[220px] desktop:leading-[32px] desktop:text-[18px]"
+            >
+              Contact us for more info
+            </a>
+          </div>
+          <!-- heading -->
+
+          <!-- questions -->
+          <div
+            class="mobile:max-w-[580px] desktop:w-[846px] desktop:h-[530px] desktop:max-w-none"
+          >
+            <div
+              class="mobile:flex mobile:flex-wrap mobile:justify-between mobile:mb-[20px] desktop:items-center desktop:mb-[48px] desktop:pl-[27px]"
+            >
+              <div class="mobile:flex mobile:gap-x-[20px] mobile:leading-[45px] desktop:gap-x-[59px]">
+                <h6
+                  class="mobile:text-royal-blue mobile:leading-[45px] desktop:w-[24px] desktop:h-[36px]"
+                >
+                  01
+                </h6>
+                <h6 class="desktop:h-[36px]">How much time does it take?</h6>
+              </div>
+
+              <button
+                onclick="myToggle()"
+                class="mobile:text-[30px] mobile:text-dark-blue"
+              >
+                &times;
+              </button>
+              <div id="dropdown"
+                class="mobile:hidden mobile:mt-[6px] desktop:w-[624px] desktop:h-[62px]"
+              >
+                <p
+                  class="mobile:text-dark-blue/85 mobile:text-[14px] mobile:pl-[45px] mobile:font-medium mobile:dark:text-white/70 desktop:pl-[83px] desktop:h-[62px] desktop:w-[624px] desktop:text-[18px] desktop:leading-[32px]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[53px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[30px] desktop:h-[36px]"
+                  >
+                    02
+                  </h6>
+                  <h6>What is your class naming convention?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[53px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[30px] desktop:h-[36px]"
+                  >
+                    03
+                  </h6>
+                  <h6>How do you communicate?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[52px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[31px] desktop:h-[36px]"
+                  >
+                    04
+                  </h6>
+                  <h6>I have a bigger project. Can you handle it?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div
+              class="mobile:py-[25px] mobile:border-t-line mobile:border-t-2 desktop:py-[32px] desktop:pl-[27px]"
+            >
+              <div
+                class="mobile:flex mobile:justify-between mobile:items-center desktop:question desktop:w-[816px]"
+              >
+                <div
+                  class="mobile:flex mobile:gap-x-[20px] desktop:gap-x-[52px]"
+                >
+                  <h6
+                    class="mobile:text-royal-blue desktop:w-[31px] desktop:h-[36px]"
+                  >
+                    05
+                  </h6>
+                  <h6>What is your class naming convention?</h6>
+                </div>
+                <img
+                  class="mobile:w-[15px] mobile:h-[15px] desktop:w-[16px] desktop:h-[16px]"
+                  src="./public/svg/add.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- questions -->
+        </div>
+      </div>
+      <!-- FAQ -->
+
+      <!-- footer -->
+      <footer>
+        <div
+          class="mobile:hidden desktop:block desktop:w-full desktop:h-[489px]"
+        >
+          <div
+            class="desktop:w-full desktop:h-[397px] desktop:bg-tint-blue desktop:pl-[160px] desktop:pt-[96px] desktop:dark:bg-gray-blue"
+          >
+            <!-- content -->
+            <div
+              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+            >
+              <div>
+                <img
+                  class="desktop:w-[160px] desktop:h-[32px]"
+                  src="./public/svg/logo.svg"
+                  alt=""
+                />
+                <p
+                  class="desktop:font-medium desktop:text-white/80 desktop:w-[399px] desktop:mt-[24px]"
+                >
+                  We are always open to discuss your project and improve your
+                  online presence.
+                </p>
+              </div>
+              <div>
+                <h2 class="desktop:text-white">Lets Talk!</h2>
+                <p
+                  class="desktop:font-normal desktop:text-grey/80 desktop:w-[399px] desktop:mt-[14px] desktop:mb-[28px]"
+                >
+                  We are always open to discuss your project, improve your
+                  online presence and help with your UX/UI design challenges.
+                </p>
+                <div
+                  class="desktop:w-[144px] desktop:h-[16px] desktop:flex desktop:justify-between"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/instagram.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- content -->
+
+            <!-- contact -->
+            <div
+              class="desktop:w-[517px] desktop:h-[95px] desktop:bg-yellow desktop:flex desktop:items-center"
+            >
+              <div
+                class="desktop:w-[343px] desktop:h-[62px] desktop:flex desktop:gap-x-[29px] desktop:pl-[37px]"
+              >
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Email me at
+                  </p>
+                  <p class="desktop:font-normal desktop:text-dark-blue/80">
+                    contact@website.com
+                  </p>
+                </div>
+
+                <div>
+                  <p
+                    class="desktop:text-[18px] desktop:leading-[32px] desktop:font-medium desktop:text-dark-blue"
+                  >
+                    Call us
+                  </p>
+                  <p
+                    class="desktop:font-normal desktop:text-dark-blue/80 desktop:w-[133px] desktop:h-[28px]"
+                  >
+                    0927 6277 28525
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+          </div>
+
+          <!-- copyright -->
+          <div
+            class="desktop:w-full desktop:h-[92px] desktop:bg-white desktop:flex desktop:px-[160px] desktop:justify-between desktop:items-center desktop:dark:bg-dark-gray"
+          >
+            <p
+              class="desktop:text-dark-blue desktop:font-medium desktop:w-[241px] desktop:dark:text-white"
+            >
+              Copyright 2022, Finsweet.com
+            </p>
+            <div
+              class="desktop:w-[437px] desktop:font-medium desktop:text-[16px] desktop:leading-[28px] desktop:text-dark-blue desktop:flex desktop:justify-between desktop:dark:text-white"
+            >
+              <a
+                href="index.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >About us</a
+              >
+              <a
+                href="features.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Features</a
+              >
+              <a
+                href="pricing.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#faq"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >FAQ</a
+              >
+              <a
+                href="blog.html"
+                class="desktop:hover:text-black/80 desktop:hover:font-bold desktop:transition-all desktop:duration-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+
+        <!-- mobile -->
+        <div
+          class="mobile:w-full mobile:h-[750px] mobile:bg-tint-blue mobile:dark:bg-gray-blue mobile:px-[30px] mobile:pt-[60px] desktop:hidden"
+        >
+          <!-- content -->
+          <div class="mobile:max-w-[580px] mobile:mx-auto">
+            <div>
+              <img
+                class="mobile:mb-[10px]"
+                src="./public/svg/logo.svg"
+                alt=""
+              />
+              <p
+                class="mobile:font-medium mobile:text-white/80 mobile:mb-[20px]"
+              >
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+
+              <!-- contact -->
+              <div
+                class="mobile:w-[360px] mx-auto mobile:p-[10px] mobile:bg-yellow mobile:flex mobile:items-center mobile:mb-[30px]"
+              >
+                <div class="mobile:flex mobile:gap-x-[15px]">
+                  <div>
+                    <p
+                      class="mobile:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Email me at
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      contact@website.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <p
+                      class="desktop:text-[16px] mobile:font-medium mobile:text-dark-blue"
+                    >
+                      Call us
+                    </p>
+                    <p class="mobile:font-normal mobile:text-dark-blue/80">
+                      0927 6277 28525
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+            </div>
+            <div>
+              <h2 class="mobile:text-white">Lets Talk!</h2>
+              <p
+                class="mobile:font-normal mobile:text-grey/80 mobile:mb-[40px]"
+              >
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div
+                class="mobile:mx-auto mobile:flex mobile:justify-between mobile:h-[30px] mobile:w-[300px] mobile:mb-[35px]"
+              >
+                <img src="./public/svg/facebook.svg" alt="" />
+                <img src="./public/svg/twitter.svg" alt="" />
+                <img src="./public/svg/instagram.svg" alt="" />
+                <img src="./public/svg/linkedin.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- copyright -->
+            <div>
+              <div
+                class="mobile:h-[200px] mobile:font-medium mobile:text-[16px] mobile:text-grey/80 mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[10px] mobile:items-center"
+              >
+                <a
+                  href="index.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Home</a
+                >
+                <a
+                  href="about.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >About us</a
+                >
+                <a
+                  href="features.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Features</a
+                >
+                <a
+                  href="pricing.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Pricing</a
+                >
+                <a
+                  href="#faq"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >FAQ</a
+                >
+                <a
+                  href="blog.html"
+                  class="mobile:hover:text-white mobile:hover:font-bold mobile:transition-all mobile:duration-300"
+                  >Blog</a
+                >
+              </div>
+              <p
+                class="mobile:text-white mobile:font-medium mobile:text-center mobile:text-[13px] mobile:mt-[35px]"
+              >
+                Copyright 2022, Finsweet.com
+              </p>
+            </div>
+            <!-- copyright -->
+          </div>
+          <!-- content -->
+        </div>
+        <!-- mobile -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- wrapper -->
+
+    <script>
+      function myToggle() {
+        var x = document.getElementById("dropdown");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
