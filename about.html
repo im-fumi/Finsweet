@@ -146,13 +146,13 @@
 
       <!-- hero -->
       <div
-        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:dark:bg-dark-gray desktop:h-[592px] desktop:py-[128px] desktop:px-0"
+        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:dark:bg-dark-gray desktop:h-[592px] desktop:py-[128px]"
       >
         <div
-          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[336px] desktop:mx-auto desktop:flex desktop:justify-between desktop:max-w-none"
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:max-w-[1280px] desktop:h-[336px] desktop:flex desktop:justify-between desktop:gap-x-[20px]"
         >
           <div
-            class="mobile:mb-[20px] desktop:w-[595px] desktop:h-[303px] desktop:mb-0"
+            class="mobile:mb-[20px] desktop:max-w-[595px] desktop:h-[303px] desktop:mb-0"
           >
             <p
               class="mobile:text-center mobile:font-normal desktop:text-left desktop:text-[18px] desktop:leading-[32px]"
@@ -165,7 +165,7 @@
               Our designs solve problems
             </h1>
             <p
-              class="mobile:description mobile:text-center desktop:text-left desktop:w-[484px]"
+              class="mobile:description mobile:text-center desktop:text-left desktop:max-w-[484px]"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -182,24 +182,24 @@
       <!-- hero -->
 
       <!-- who we are -->
-      <div
-        class="mobile:w-full mobile:dark:bg-dark-gray desktop:h-[716px]"
-      >
-        <div class="desktop:w-[1280px] desktop:h-[716px] desktop:mx-auto">
+      <div class="mobile:w-full mobile:dark:bg-dark-gray desktop:h-[716px]">
+        <div class="desktop:max-w-[1280px] desktop:h-[716px] desktop:mx-auto">
           <div
-            class="mobile:max-w-[580px] mobile:mx-auto mobile:px-[30px] mobile:py-[60px] mobile:bg-grey mobile:dark:bg-chetwode desktop:w-[1280px] desktop:h-[376px] desktop:py-[80px] desktop:pl-[79px] desktop:pr-0 desktop:max-w-none desktop:mx-0"
+            class="mobile:max-w-[580px] mobile:mx-auto mobile:px-[30px] mobile:py-[60px] mobile:bg-grey mobile:dark:bg-chetwode desktop:max-w-[1280px] desktop:h-[376px] desktop:py-[80px] desktop:pl-[79px] desktop:pr-[30px] desktop:mx-0"
           >
-            <div class="desktop:w-[1092px] desktop:h-[216px]">
+            <div class="desktop:max-w-[1092px] desktop:h-[216px]">
               <p
                 class="mobile:description mobile:text-dark-blue mobile:font-medium mobile:mb-[4px]"
               >
                 Who we are
               </p>
-              <div class="desktop:flex desktop:justify-between">
+              <div
+                class="desktop:flex desktop:justify-between desktop:gap-x-[10px]"
+              >
                 <div>
                   <h3>Goal focussed</h3>
                   <p
-                    class="mobile:description mobile:mt-[8px] mobile:mb-[15px] desktop:w-[515px] desktop:mt-[16px] desktop:mb-0"
+                    class="mobile:description mobile:mt-[8px] mobile:mb-[15px] desktop:max-w-[515px] desktop:mt-[16px] desktop:mb-0"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -208,9 +208,11 @@
                   </p>
                 </div>
                 <div>
-                  <h3>Continuous improvement</h3>
+                  <h3 class="desktop:whitespace-nowrap">
+                    Continuous improvement
+                  </h3>
                   <p
-                    class="mobile:description mobile:mt-[8px] desktop:w-[515px] desktop:mt-[16px]"
+                    class="mobile:description mobile:mt-[8px] desktop:max-w-[515px] desktop:mt-[16px]"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -232,17 +234,17 @@
 
       <!-- process -->
       <div
-        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:bg-white mobile:dark:bg-dark-gray desktop:h-[524px] desktop:py-[128px] desktop:px-0"
+        class="mobile:w-full mobile:py-[60px] mobile:px-[30px] mobile:bg-white mobile:dark:bg-dark-gray desktop:py-[128px] desktop:px-[60px]"
       >
         <div
-          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[268px] desktop:max-w-none"
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:max-w-[1280px]"
         >
           <h2 class="mobile:text-center desktop:mb-[48px]">
             The process we follow
           </h2>
           <!-- cards -->
           <div
-            class="mobile:w-[450px] mobile:mx-auto desktop:w-[1280px] desktop:h-[156px] desktop:flex desktop:justify-between"
+            class="mobile:max-w-[450px] mobile:mx-auto desktop:max-w-[1280px] desktop:flex desktop:justify-center desktop:mx-0 desktop:flex-wrap desktop:gap-y-[30px]"
           >
             <div
               class="mobile:mt-[40px] desktop:mt-0 desktop:w-[296px] desktop:h-[156px]"
@@ -258,9 +260,7 @@
                 ></div>
               </div>
               <h6>Planning</h6>
-              <p
-                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
-              >
+              <p class="mobile:description mobile:mt-[4px] desktop:mt-[8px]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </p>
             </div>
@@ -279,9 +279,7 @@
                 ></div>
               </div>
               <h6>Conception</h6>
-              <p
-                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
-              >
+              <p class="mobile:description mobile:mt-[4px] desktop:mt-[8px]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </p>
             </div>
@@ -300,9 +298,7 @@
                 ></div>
               </div>
               <h6>Design</h6>
-              <p
-                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
-              >
+              <p class="mobile:description mobile:mt-[4px] desktop:mt-[8px]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </p>
             </div>
@@ -321,9 +317,7 @@
                 ></div>
               </div>
               <h6>Development</h6>
-              <p
-                class="mobile:description mobile:mt-[4px] desktop:mt-[8px]"
-              >
+              <p class="mobile:description mobile:mt-[4px] desktop:mt-[8px]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </p>
             </div>
@@ -336,13 +330,13 @@
 
       <!-- mission -->
       <div
-        class="mobile:w-full mobile:bg-accent mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-chetwode  desktop:h-[1022px] desktop:py-[128px] desktop:flex desktop:justify-center desktop:flex-wrap desktop:gap-y-[96px] desktop:px-0"
+        class="mobile:w-full mobile:bg-accent mobile:px-[30px] mobile:py-[60px] mobile:dark:bg-chetwode desktop:h-[1022px] desktop:py-[128px] desktop:flex desktop:justify-center desktop:flex-wrap desktop:gap-y-[96px] desktop:px-[30px]"
       >
         <div
-          class="desktop:w-[1278px] desktop:h-[336px] desktop:flex desktop:justify-between desktop:items-center"
+          class="desktop:max-w-[1278px] desktop:h-[336px] desktop:flex desktop:justify-between desktop:items-center"
         >
           <div
-            class="mobile:mb-[20px] mobile:max-w-[580px] mobile:mx-auto desktop:w-[623px] desktop:h-[228px] desktop:max-w-none desktop:mb-0 desktop:mx-0"
+            class="mobile:mb-[20px] mobile:max-w-[580px] mobile:mx-auto desktop:max-w-[623px] desktop:h-[228px] desktop:mb-0 desktop:mx-0"
           >
             <p
               class="mobile:description mobile:font-medium mobile:text-dark-blue"
@@ -366,14 +360,14 @@
           />
         </div>
         <div
-          class="mobile:max-w-[580px] mobile:mx-auto desktop:w-[1280px] desktop:h-[334px] desktop:flex desktop:justify-between desktop:items-center desktop:mx-0 desktop:max-w-none"
+          class="mobile:max-w-[580px] mobile:mx-auto desktop:max-w-[1280px] desktop:h-[334px] desktop:flex desktop:justify-center desktop:gap-x-[120px] desktop:items-center desktop:mx-0"
         >
           <img
             class="mobile:w-[500px] mobile:h-[300px] mobile:mt-[10px] mobile:mx-auto mobile:object-cover desktop:w-[514px] desktop:h-[334px] desktop:mx-0"
             src="./public/images/about/picture-4.jpg"
             alt=""
           />
-          <div class="mobile:mt-[20px] desktop:w-[623px] desktop:h-[228px]">
+          <div class="mobile:mt-[20px] desktop:max-w-[623px] desktop:h-[228px]">
             <p
               class="mobile:description mobile:font-medium mobile:text-dark-blue"
             >
@@ -393,17 +387,17 @@
 
       <!-- benefits -->
       <div
-        class="mobile:w-full mobile:px-[30px] mobile:py-[60px] mobile:bg-white mobile:dark:bg-dark-gray desktop:h-[880px] desktop:py-[128px] desktop:px-0"
+        class="mobile:w-full mobile:px-[30px] mobile:py-[60px] mobile:bg-white mobile:dark:bg-dark-gray desktop:py-[128px] desktop:px-0"
       >
         <div
-          class="mobile:max-w-[600px] mobile:mx-auto desktop:w-[1280px] desktop:h-[624px] desktop:mx-auto desktop:flex desktop:justify-center desktop:flex-wrap desktop:content-between desktop:max-w-none"
+          class="mobile:max-w-[600px] mobile:mx-auto desktop:max-w-[1280px] desktop:mx-auto desktop:flex desktop:justify-center desktop:flex-wrap"
         >
           <h2 class="mobile:mb-[30px] mobile:text-center desktop:w-[630px]">
             The benefits of working with us
           </h2>
           <!-- cards -->
           <div
-            class="mobile:flex mobile:flex-wrap mobile:justify-around mobile:gap-y-[10px] mobile:content-start desktop:w-[1280px] desktop:h-[316px] desktop:justify-between desktop:gap-y-0 desktop:content-none desktop:flex-nowrap"
+            class="mobile:flex mobile:flex-wrap mobile:justify-around mobile:gap-y-[10px] mobile:content-start desktop:max-w-[1280px] desktop:justify-center desktop:gap-x-[30px] desktop:gap-y-[30px] desktop:content-none desktop:mb-[40px]"
           >
             <div
               class="mobile:w-[280px] mobile:h-[240px] mobile:bg-grey mobile:pt-[30px] mobile:pb-[10px] mobile:px-[30px] mobile:dark:bg-chetwode desktop:w-[405px] desktop:h-[316px] desktop:pt-[50px] desktop:pr-[32px] desktop:pl-[48px] desktop:pb-[48px] desktop:px-0"
@@ -469,7 +463,7 @@
 
           <!-- logo -->
           <div
-            class="mobile:w-full mobile:pt-[40px] mobile:px-[30px] desktop:w-[1280px] desktop:h-[84px] desktop:flex desktop:justify-between desktop:items-center desktop:max-w-none desktop:px-0 desktop:py-0"
+            class="mobile:w-full mobile:pt-[40px] mobile:px-[30px] desktop:max-w-[1280px] desktop:h-[84px] desktop:flex desktop:justify-between desktop:items-center desktop:px-[30px] desktop:py-0 desktop:gap-x-[20px]"
           >
             <div
               class="mobile:mb-[20px] desktop:w-[176px] desktop:h-[84px] desktop:mb-0"
@@ -519,26 +513,28 @@
 
       <!-- team -->
       <div
-        class="mobile:w-full mobile:bg-grey mobile:py-[60px] mobile:px-[20px] mobile:dark:bg-chetwode desktop:h-[712px] desktop:py-[128px] desktop:px-0"
+        class="mobile:w-full mobile:bg-grey mobile:py-[60px] mobile:px-[20px] mobile:dark:bg-chetwode desktop:py-[128px] desktop:px-[30px]"
       >
         <h2 class="mobile:text-center mobile:mb-[30px] desktop:mb-[48px]">
           Meet our team
         </h2>
 
         <div
-          class="mobile:w-[450px] mobile:flex mobile:flex-wrap mobile:justify-between mobile:gap-y-[10px] mobile:mx-auto desktop:w-[1280px] desktop:h-[344px] desktop:gap-y-0 desktop:flex-nowrap"
+          class="mobile:max-w-[450px] mobile:flex mobile:flex-wrap mobile:justify-between mobile:gap-y-[10px] mobile:mx-auto desktop:max-w-[1280px] desktop:gap-y-[30px] desktop:justify-center desktop:gap-x-[30px]"
         >
           <div
             class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
           >
-            <div class="mobile:relative">
+            <div
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:relative mobile:cursor-pointer group/purple1 desktop:mb-[30px] desktop:w-[168px] desktop:h-[168px]"
+            >
               <img
-                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
+                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:object-cover desktop:w-[168px] desktop:h-[168px]"
                 src="./public/images/about/picture-5.jpg"
                 alt=""
               />
               <div
-                class="mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-[31px] mobile:flex mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:right-0 desktop:pb-[28px]"
+                class="mobile:hidden group-hover/purple1:flex mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-0 mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:pb-[28px]"
               >
                 <div
                   class="mobile:flex mobile:w-[62px] mobile:justify-between desktop:w-[61px] desktop:h-[13px]"
@@ -553,9 +549,7 @@
             <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
               John Smith
             </h6>
-            <p
-              class="mobile:description mobile:text-center mobile:mx-auto"
-            >
+            <p class="mobile:description mobile:text-center mobile:mx-auto">
               CEO
             </p>
           </div>
@@ -563,17 +557,30 @@
           <div
             class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
           >
-            <img
-              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
-              src="./public/images/about/picture-6.jpg"
-              alt=""
-            />
+            <div
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:relative mobile:cursor-pointer group/purple1 desktop:mb-[30px] desktop:w-[168px] desktop:h-[168px]"
+            >
+              <img
+                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:object-cover desktop:w-[168px] desktop:h-[168px]"
+                src="./public/images/about/picture-6.jpg"
+                alt=""
+              />
+              <div
+                class="mobile:hidden group-hover/purple1:flex mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-0 mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:pb-[28px]"
+              >
+                <div
+                  class="mobile:flex mobile:w-[62px] mobile:justify-between desktop:w-[61px] desktop:h-[13px]"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
             <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
               Simon Adams
             </h6>
-            <p
-              class="mobile:description mobile:text-center mobile:mx-auto"
-            >
+            <p class="mobile:description mobile:text-center mobile:mx-auto">
               CTO
             </p>
           </div>
@@ -581,17 +588,30 @@
           <div
             class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
           >
-            <img
-              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
-              src="./public/images/about/picture-7.jpg"
-              alt=""
-            />
+            <div
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:relative mobile:cursor-pointer group/purple1 desktop:mb-[30px] desktop:w-[168px] desktop:h-[168px]"
+            >
+              <img
+                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:object-cover desktop:w-[168px] desktop:h-[168px]"
+                src="./public/images/about/picture-7.jpg"
+                alt=""
+              />
+              <div
+                class="mobile:hidden group-hover/purple1:flex mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-0 mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:pb-[28px]"
+              >
+                <div
+                  class="mobile:flex mobile:w-[62px] mobile:justify-between desktop:w-[61px] desktop:h-[13px]"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
             <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
               Paul Jones
             </h6>
-            <p
-              class="mobile:description mobile:text-center mobile:mx-auto"
-            >
+            <p class="mobile:description mobile:text-center mobile:mx-auto">
               Design Lead
             </p>
           </div>
@@ -599,17 +619,30 @@
           <div
             class="mobile:w-[220px] mobile:h-[300px] mobile:bg-white mobile:pt-[30px] mobile:dark:bg-dark-gray desktop:w-[296px] desktop:h-[344px] desktop:px-[64px] desktop:pt-[48px]"
           >
-            <img
-              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:object-cover desktop:mx-0 desktop:w-[168px] desktop:h-[168px] desktop:mb-[30px]"
-              src="./public/images/about/picture-8.jpg"
-              alt=""
-            />
+            <div
+              class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:mb-[20px] mobile:relative mobile:cursor-pointer group/purple1 desktop:mb-[30px] desktop:w-[168px] desktop:h-[168px]"
+            >
+              <img
+                class="mobile:w-[160px] mobile:h-[160px] mobile:rounded-full mobile:mx-auto mobile:object-cover desktop:w-[168px] desktop:h-[168px]"
+                src="./public/images/about/picture-8.jpg"
+                alt=""
+              />
+              <div
+                class="mobile:hidden group-hover/purple1:flex mobile:w-[160px] mobile:h-[160px] mobile:bg-gradient-to-t from-[#5239FA]/100 to-[#FFFFFF00]/0 mobile:rounded-full mobile:absolute mobile:top-0 mobile:right-0 mobile:items-end mobile:justify-center mobile:pb-[20px] desktop:w-[168px] desktop:h-[168px] desktop:pb-[28px]"
+              >
+                <div
+                  class="mobile:flex mobile:w-[62px] mobile:justify-between desktop:w-[61px] desktop:h-[13px]"
+                >
+                  <img src="./public/svg/facebook.svg" alt="" />
+                  <img src="./public/svg/twitter.svg" alt="" />
+                  <img src="./public/svg/linkedin.svg" alt="" />
+                </div>
+              </div>
+            </div>
             <h6 class="mobile:text-center mobile:mb-[2px] mobile:mx-auto">
               Sara Hardin
             </h6>
-            <p
-              class="mobile:description mobile:text-center mobile:mx-auto"
-            >
+            <p class="mobile:description mobile:text-center mobile:mx-auto">
               Project Manager
             </p>
           </div>
@@ -627,7 +660,7 @@
           >
             <!-- content -->
             <div
-              class="desktop:w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
+              class="desktop:max-w-[1058px] desktop:h-[206px] desktop:flex desktop:justify-between"
             >
               <div>
                 <img
